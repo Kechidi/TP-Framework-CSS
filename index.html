@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tournoi de six nations 2022 féminin </title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <section class="hero is-medium is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-8-desktop is-offset-2-desktop">
+              <img src="css/image/logo.png" alt="Made with Bulma" width="128" height="24">
+              <h1 class="title is-2 is-spaced">
+                Tournoi des six nations 2022 féminin
+              </h1>
+              <h2 class="subtitle is-4">
+                  Le Tournoi des six nations aura lieu du 26 mars au 30 avril 2022<strong>compte a robot</strong> project.
+
+              </h2>
+
+
+              <label id="Compte"></label>
+              <script type="text/javascript">
+
+                var Affiche=document.getElementById("Compte");
+                function Rebour() {
+                  var date1 = new Date();
+                  var date2 = new Date ("Mar 22, 2022 00:00:00");
+                  var sec = (date2 - date1) / 1000;
+                  var n = 24 * 3600;
+                  if (sec > 0) {
+                    j = Math.floor (sec / n);
+                    h = Math.floor ((sec - (j * n)) / 3600);
+                    mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
+                    sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
+                    Affiche.innerHTML = +j +" j "+ h +" h "+ mn +" min "+ sec + " s";
+                    window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
+                  }
+                  tRebour=setTimeout ("Rebour();", 1000);
+                }
+                Rebour();
+              </script>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <div class="buttons">
+      <div class="button">
+        <button class="button is-link" onclick="window.location.href = 'http://localhost/perso/PhpstormProjects/TP-Framework-CSS/tournoi.html';" >Tours</button>
+      </div>
+      <div class="column">
+
+        <button class="button is-link" onclick="window.location.href = '';" >Equipes</button>
+
+      </div>
+      <div class="column">
+        <button class="button is-link">Stades</button>
+      </div>
+      <div class="column">
+        Fourth column
+      </div>
+
+
+
+
+
+
+
+    <footer class="footer has-text-centered">
+      <div class="container">
+         <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <p>
+              <strong class="has-text-weight-semibold">
+                <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.4</a>
+              </strong>
+            </p>
+            <p>
+              <small>
+                Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+              </small>
+            </p>
+            <p style="margin-top: 1rem;">
+              <a href="http://bulma.io">
+                <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
+</html>
