@@ -6804,7 +6804,13 @@ background-color: #0a0a0a;
 position: relative;
 
 }
-
+.image is-128x128{
+  position: static;
+  right: 3px;
+}
+.has-ratio{
+  position: center;
+}
 
 
 
