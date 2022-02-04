@@ -1,0 +1,1799 @@
+/* !UNIVERSAL ELEMENTS */
+
+/*******************************
+	ORGANISM - FEATURED ARTICLES
+*******************************/
+.article__header {
+	height: 100vh;
+	position: relative;
+	margin: 0 -1rem;
+}
+
+.article__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+}
+
+.article__content {
+  padding: 0 1rem;
+}
+
+.article__inner {
+	position: absolute;
+	left: 0;
+	bottom: 3rem;
+	width: 100%;
+}
+
+.article__inner .article__title {
+	width: 100%;
+	float: left;
+}
+
+.article__inner h1 {
+	color: white;
+	text-align: center;
+	position: relative;
+	padding-bottom: 1.5rem;
+	font-style: normal;
+}
+
+.article__inner h1:after {
+	content: '';
+	width: 90%;
+	height: 1px;
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 5%;
+}
+
+.article__inner .article__meta {
+	width: 100%;
+	float: left;
+	font-size: .95rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: .8rem 2.5rem;
+}
+
+.article__inner .article__meta .article__category,
+.article__inner .article__meta .article__date {
+	width: 50%;
+	float: left;
+	display: inline-block;
+}
+
+.article__inner .article__meta .article__category,
+.article__inner .article__meta .article__date,
+.article__inner .article__meta .article__author {
+	color: #fff;
+	display: inline-block;
+}
+
+.article__inner .article__meta .article__author {
+	display: block;
+	width: 100%;
+	float: left;
+	margin-top: 1.3rem;
+}
+
+.article__quote .article__author {
+  text-align: right;
+  font-style: italic;
+  font-size: .9rem;
+  margin: 1rem 0;
+}
+
+.article__image-caption {
+  font-style: italic;
+  font-weight: bold;
+  margin: .8rem 0;
+  font-size: .9rem;
+}
+
+.article__image-caption--full {
+  margin: 0;
+}
+
+.article__abstract {
+	font-size: 1.1rem;
+	font-weight: bold;
+	line-height: 1.6rem;
+}
+
+.wp-caption p {
+    font-size: 0;
+    margin: 0;
+}
+
+.wp-caption .wp-caption-text {
+    font-size: .8rem;
+    font-style: italic;
+    margin: .5rem 0 0;
+    color: #383838;
+}
+
+/******************************
+    TABLES
+******************************/
+
+.table > thead > tr > th {
+    background: var(--primary);
+    color: #fff;
+    font-size: .9rem;
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    border: 0;
+    padding: .75rem .5rem;
+}
+
+.table > tbody > tr > td {
+    border: 0;
+    vertical-align: middle;
+    padding: .75rem .5rem;
+    white-space: normal;
+    text-align: left;
+}
+
+.table th:first-of-type {
+    border-top-left-radius: 5px;
+}
+
+.table th:last-of-type {
+    border-top-right-radius: 5px;
+}
+
+.table tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+.table tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+}
+
+.table.box-shadow {
+    box-shadow: var(--box-shadow-light);
+}
+
+table.sortable th:hover {
+    cursor: pointer;
+}
+
+.table__header-up,
+.table__header-down {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+table.sortable th:after,
+.table__header-down:after {
+  content: "\e903";
+  font-family: 'icomoon';
+  padding-left: .3rem;
+  font-size: .6rem;
+}
+
+table.sortable th.table__header-up:after,
+.table__header-up:after {
+  content: "\e901";
+  font-family: 'icomoon';
+  padding-left: .3rem;
+  font-size: .6rem;
+}
+
+/******************************
+    ORGANISM - COOKIE NOTICE
+******************************/
+
+.cookie-notice-container {
+    padding: 1.5rem;
+}
+
+.cookie-notice-container span {
+    display: block;
+    margin-bottom: 1.2rem;
+}
+
+.cookie-notice-container #cn-notice-text a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.cookie-notice-container .cn-button {
+    display: inline-block;
+    font-size: .8rem;
+    padding: .6rem;
+    font-weight: bold;
+}
+
+/******************************
+    ORGANISM - CONTENT PAGE
+******************************/
+
+header[role="heading"] {
+    position: relative;
+    z-index: 1;
+}
+
+.default-content__header {
+    margin-top: 0 !important;
+}
+
+header[role="heading"] span {
+    background: var(--grey-bg);
+    position: relative;
+    z-index: 2;
+    padding-right: 1rem;
+    display: block;
+    word-wrap: break-word;
+}
+
+.content__body header {
+    position: relative;
+    display: flex;
+}
+
+.content__body header::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: calc(50% - 1px);
+    width: 100%;
+    height: 1px;
+    background: var(--primary);
+    z-index: 0;
+}
+
+.content__body,
+.content__sidebar {
+    width: 100%;
+    float: left;
+}
+
+.content__sidebar [data-content="table"] {
+    position: relative;
+}
+
+.sidebar__awsBanner img {
+    max-height: 45px;
+}
+
+[data-menu] {
+    max-height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+}
+
+[data-button="menu"] {
+    cursor: pointer;
+}
+
+[data-menu].open {
+    max-height: 30rem;
+    visibility: visible;
+}
+
+.sidebar__heading {
+    width: 100%;
+    float: left;
+    margin-left: 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.sidebar__content img {
+    display: block;
+    margin: auto;
+}
+
+[data-map] {
+    width: 100%;
+    height: 400px;
+}
+
+.page-template-home .content__sidebar--fixtures {
+    /* border-top: solid 1px #ccc; */
+    padding: 1rem;
+}
+
+.page-template-home .sidebar-fixtures__outer {
+    margin-top: 0;
+}
+
+.page-template-home .content__body--sidebar .video-section {
+    padding: 1rem;
+}
+
+/** MOLECULE - NEWS SIDEBAR **/
+
+.content__sidebar-news-title {
+    display: none;
+}
+
+.content__sidebar-news-title,
+.content__sidebar-news-title span {
+    position: relative;
+}
+
+.content__sidebar-news-title:before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    background: #003976;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    width: 100%;
+}
+
+.content__sidebar-more-btn {
+    max-width: 100px;
+}
+
+.content__sidebar-more-btn:hover,
+.content__sidebar-more-btn:focus {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    text-decoration: none;
+}
+
+/** MOLECULE - SUBMENU **/
+
+.sub-menu__main {
+    font-size: .75rem;
+    position: relative;
+    z-index: 10;
+}
+
+.sub-menu__main .sub-menu__breadcrumb li:first-of-type {
+    padding-left: 0;
+}
+
+.sub-menu__main .sub-menu__breadcrumb li {
+    position: relative;
+}
+
+.sub-menu__main .sub-menu__breadcrumb li:after {
+    content: "\e904";
+    font-family: 'icomoon';
+    font-size: .65rem;
+    position: absolute;
+    right: -.4rem;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.sub-menu__main .sub-menu__breadcrumb li:last-of-type:after {
+    display: none;
+}
+
+.sub-menu__main .sub-menu__child-menu {
+    position: absolute;
+    right: 1.5rem;
+    top: .5rem;
+    cursor: pointer;
+    text-align: right;
+    z-index: 15;
+}
+
+.sub-menu__main .sub-menu__button i {
+    position: absolute;
+    right: -1.5rem;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.sub-menu__main .sub-menu__menu {
+    max-height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    min-width: 120px;
+    position: absolute;
+    right: -1.5rem;
+    background: #fff;
+    padding: .4rem 0 .5rem;
+    z-index: 10;
+    text-align: right;
+    top: 100%;
+    -webkit-box-shadow: 0px 5px 3px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 5px 3px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 3px 0px rgba(0,0,0,0.2);
+    transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+}
+
+.sub-menu__main .sub-menu__menu.open {
+    max-height: 30rem;
+    visibility: visible;
+}
+
+.sub-menu__main .sub-menu__menu .menu li {
+    display: block;
+    text-transform: none;
+    font-size: .75rem;
+    padding: .3rem 1rem;
+    line-height: 1rem;
+}
+
+.sub-menu__main .sub-menu__menu .menu li a {
+    font-weight: 400;
+}
+
+.sub-menu__main .sub-menu__menu .menu .current_page_item {
+    background: #000;
+}
+
+.sub-menu__main .sub-menu__menu .menu .current_page_item a {
+    color: #fff;
+}
+
+/** MOLECULE - SIDEBAR **/
+
+.sidebar__buttons {
+    overflow: hidden;
+    display: none;
+}
+
+.sidebar__buttons .sidebar__link {
+    width: 100%;
+    margin: 0;
+    float: left;
+    border-radius: 2px;
+    /* border: 1px solid #000; */
+    transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+}
+
+.sidebar__buttons .sidebar__link i {
+    font-weight: 700;
+}
+
+.sidebar__link {
+    width: calc(100% - .4rem);
+    margin-left: .4rem;
+}
+
+.sidebar__buttons-arrow {
+    grid-area: icon;
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    top: 4px;
+    height: 1rem;
+    margin-left: .5rem;
+    transition: width .2s ease-out;
+}
+
+.sidebar__buttons-arrow:before {
+    position: absolute;
+    top: calc(50% - 2px);
+    right: 0;
+    left: 0;
+    content: '';
+    display: inline-block;
+    border-top: 2px solid #000;
+}
+
+.sidebar__buttons-arrow:after {
+    position: absolute;
+    top: calc(50% - 6px);
+    right: 0;
+    content: '';
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    border: 1px solid #000;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+}
+
+.sidebar__link:hover .sidebar__buttons-arrow {
+    width: 50px;
+}
+
+.sidebar-fixtures__outer,
+.sidebar__table {
+    overflow: hidden;
+    box-shadow: var(--box-shadow-light);
+    border-radius: 5px;
+}
+
+/** MOLECULE - GOODWILL FORM **/
+
+.form .form-group,
+.form .checkbox {
+    width: 100%;
+    float: left;
+}
+
+.form .form-group p {
+    margin: 0;
+}
+
+.form .form-group label {
+    font-size: .8rem;
+}
+
+.form .form-group .form-control {
+    border-radius: 0;
+    border: 1px solid #ccc;
+}
+
+.form .form-group select.form-control {
+    background: #fff url('assets/img/dropdown-bg.png') no-repeat 98% 50% / 12px;
+}
+
+.form .checkbox label br {
+    display: none;
+}
+
+.form .checkbox label {
+    font-size: .85rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.form input[type="submit"] {
+    background: #000;
+    color: #fff;
+    border: 0;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+/** MOLECULE - CONTACT FORM **/
+
+.form-field,
+.form-field input,
+.form-field textarea {
+    width: 100%;
+}
+
+.form-field {
+    margin-bottom: .8rem;
+}
+
+.form-field label {
+    font-size: .85rem;
+    font-weight: normal;
+}
+
+.form-field textarea {
+    height: 100px;
+    border: 1px solid #ccc;
+}
+
+.form-field--submit input {
+    background: #000;
+    color: #fff;
+    border: 0;
+    padding: .3rem .8rem;
+    transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+}
+
+.form-field--submit input:hover {
+    background: #003976;
+    color: #fff;
+}
+
+/******************************
+    ORGANISM - NEWS PAGE
+******************************/
+
+/** MOLECULE - SUMMARY **/
+.content__summary {
+    list-style: square;
+}
+
+.content__summary li:before {
+    content: none;
+}
+
+/** MOLECULE - META TEXT **/
+.content__meta {
+    font-size: .8rem;
+    border-top: 1px solid #d7d7d7;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content__meta-date {
+    display: inline-block;
+}
+
+
+.gallery .content__meta--right,
+.gallery .content__meta-date {
+    margin-bottom: 0;
+}
+
+.content__meta--right .content__social-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    line-height: 1.75rem;
+    font-size: .85rem;
+}
+
+.content__author-headshot {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #d7d7d7;
+}
+
+.content__meta--bottom-border {
+    border-top: none;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.content__author  {
+    display: block;
+}
+
+/** MOLECULE - IMAGE **/
+
+.content__image {
+    font-size: .8rem;
+}
+
+.content__image-img {
+    width: 100%;
+}
+
+.content__image-sponsor img {
+    max-height: 20px;
+    max-width: 60px;
+    margin-left: .75rem;
+}
+
+.content__image p:last-child{
+    padding-bottom: .75rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.content__image.content__image--news figure img {
+    width: 100%;
+}
+
+/** MOLECULE - ASIDE **/
+
+.content__aside {
+    border-bottom: 1px solid #d7d7d7;
+}
+
+/** MOLECULE - BODY TEXT **/
+
+.content__excerpt {
+    font-weight: bold;
+}
+
+.content__excerpt p {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.content__excerpt-gallery {
+    margin-bottom: 0;
+}
+
+.content__excerpt-gallery p {
+    margin: 1rem 0;
+}
+
+/** ATOM - NEWSLETTER **/
+
+.content__newsletter {
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    color: #000;
+    position: relative;
+}
+
+.content__newsletter-title {
+    font-size: 1.25rem;
+}
+
+.content__newsletter-icon {
+    font-size: 1.5rem;
+    vertical-align: text-top;
+}
+
+.content__newsletter input[type="text"],
+.broadcaster-search__input {
+    width: 80%;
+    padding: .25rem;
+    border: 1px solid #d7d7d7;
+    border-right: none;
+}
+
+.content__newsletter-submit,
+.broadcaster-search__reset {
+    width: 20%;
+    padding: .325rem;
+    background-color: #003976;
+    color: #fff;
+    border: none;
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+}
+
+.content__newsletter-submit:hover,
+.broadcaster-search__reset:hover {
+    background: #000;
+    color: #fff;
+}
+
+[data-broadcaster-country] {
+    display: none;
+}
+
+/**
+*   NEWSLETTER - TABLE FORMS
+*   PLEASE DELETE WHEN GOODFORM PROVIDE ALTERNATIVE
+**/
+
+#competition-form table > tbody > tr > td {
+    display: block;
+    border: 0px;
+}
+
+#competition-form table > tbody > tr > td label {
+    line-height: 1rem;
+    margin-bottom: 0;
+}
+
+#competition-form table > tbody > tr > td p {
+    line-height: .5rem;
+    margin: 0 0 .5rem;
+}
+
+#competition-form table > tbody > tr > td input,
+#competition-form table > tbody > tr > td select {
+    line-height: 1rem;
+    padding: .5rem 1.15rem .5rem .7rem;
+    width: 100%;
+}
+
+#competition-form table > tbody > tr > td select,
+#competition-form table > tbody > tr > td #dateOfBirth {
+    width: 100%;
+    float: left;
+    margin: 0 0 .5rem;
+}
+
+#competition-form p {
+    line-height: 1.6rem;
+}
+
+#competition-form p i {
+    line-height: 1rem;
+}
+
+#competition-form p > label {
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+#competition-form p i br,
+#competition-form p > label > br {
+    display: none;
+}
+
+#competition-form p > label input[type="radio"] {
+    margin: 0;
+}
+
+#competition-form p > label input[type="checkbox"] {
+    float: left;
+    margin: .5rem 1rem 1rem 0;
+}
+
+#competition-form p > input[type="submit"] {
+    margin: 0;
+    float: left;
+    border-radius: 2px;
+    border: 1px solid #000;
+    transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    font-size: .75rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: #2B221B;
+    height: 40px;
+    padding: .4rem 1.15rem .5rem;
+    width: 100%;
+}
+
+#competition-form p > input[type="submit"]:hover {
+    background: #000;
+    color: #fff;
+}
+
+[data-dropdown] .dropdown-heading {
+    position: relative;
+    width: 95px;
+    cursor: pointer;
+}
+
+[data-dropdown] .dropdown-heading:after {
+    content: '+';
+    position: absolute;
+    top: 6px;
+    right: 10px;
+}
+
+[data-dropdown].open .dropdown-heading:after {
+    content: '-';
+}
+
+/********************
+* CONTENT FORM
+********************/
+.content__main input[type="hidden"],
+.content__main #registration-form br {
+    display: none;
+}
+
+.content__main #registration-form table > tbody > tr > td {
+    background: var(--bg-grey);
+    border: none;
+    padding: 0;
+}
+
+.content__main #registration-form input,
+.content__main #registration-form select {
+    border: solid 1px #D6D6D6;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+}
+
+#postcodeInput,
+#dateOfBirth {
+    width: 100%;
+}
+
+#genderValue,
+#nationalTeam,
+#countryOfResidence {
+    float: left;
+    width: 100%;
+}
+
+.content__main #registration-form input[type="submit"] {
+    position: relative;
+    padding: 0.5rem 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: all ease .2s;
+    border: none;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.content__main #registration-form input[type="submit"]:hover {
+    background: var(--primary);
+}
+
+/* !Bootstrap sm: Medium devices (tablets, 768px and up) */
+@media (min-width: 48em) {
+
+    [data-dropdown] .dropdown-heading {
+        display: none;
+    }
+
+    [data-dropdown] ul {
+        display: block;
+    }
+
+
+    /** FORMS **/
+
+    #competition-form table > tbody > tr > td {
+        width: auto;
+        display: table-cell;
+    }
+
+    #competition-form table > tbody > tr > td input,
+    #competition-form table > tbody > tr > td select {
+        width: auto;
+    }
+
+    #competition-form table > tbody > tr > td select,
+    #competition-form table > tbody > tr > td #dateOfBirth {
+        width: 210px;
+    }
+
+    #competition-form p > input[type="submit"] {
+        width: auto;
+    }
+}
+
+/** MOLECULE - PAGINATION **/
+
+.content__pagination,
+.content__pagination-next {
+    border-top: 1px solid #d7d7d7;
+}
+
+
+/******************************
+    ORGANISM - SOCIAL BOARD
+******************************/
+
+/** MOLECULE - SOCIAL NAV **/
+
+.social-board__filters:after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding-top: 1rem;
+}
+
+.social-board__filters .social-board__filter {
+    transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    cursor: pointer;
+}
+
+.social-board__filters .active,
+.social-board__filters .social-board__filter:hover {
+    color: #003976;
+}
+
+/** MOLECULE - SOCIAL BLOCK **/
+
+.social-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.social-board .social-board__box {
+    position: relative;
+    margin: 0 0 1rem;
+}
+
+.social-board__header {
+    border-bottom: 1px solid #ccc;
+}
+
+.social-board__name {
+    font-size: .85rem;
+}
+
+.social-board__content {
+    font-size: .9rem;
+    line-height: 1.3rem;
+}
+
+.social-board__box a:hover {
+    color: #000;
+}
+
+/******************************
+    ORGANISM - SPONSOR INDEX
+******************************/
+
+/** MOLECULE - SPONSOR BLOCK **/
+
+.sponsor-index__list .sponsor-index__logo img {
+    max-width: 140px;
+    height: auto;
+}
+
+.sponsor-index__content {
+    font-size: .9rem;
+    line-height: 1.3rem;
+}
+
+.sponsor-index .sponsor-index__logo img {
+    vertical-align: middle;
+    max-height: 100px;
+    width: auto;
+}
+
+.sponsor-index .sponsor-index__logo .tissot {
+    max-height: 70px;
+}
+
+.sponsor-index__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 75px;
+}
+
+.broadcasters-page .table {
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-light);
+}
+
+/******************************
+    ORGANISM - PARTNER PAGE
+******************************/
+
+.partner__about {
+    width: 100%;
+    float: left;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+/*********************************
+    ORGANISM - BROADCASTER INDEX
+*********************************/
+
+.sponsor-index__block {
+    position: relative;
+    border-radius: 5px;
+}
+
+.sponsor-index__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.sponsor-index__logo {
+    border: 1px solid #003976;
+    height: 150px;
+    line-height: 145px;
+    position: relative;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+}
+
+.sponsor-index__title {
+    border-radius: 0 0 5px 5px;
+}
+
+/** ATOM - DEFAULT BROADCASTER LOGOS (WIDE AND SHORT) **/
+.sponsor-index__logo img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+/** ATOM - OFF SQUARE BROADCASTER LOGOS **/
+.sponsor-index__logo .supersport,
+.sponsor-index__logo .nbc_sports_network,
+.sponsor-index__logo .dazn {
+    max-width: 77px;
+    height: 78px;
+}
+
+/** ATOM - CUSTOM BROADCASTER LOGOS **/
+.sponsor-index__logo .bbc_sport {
+    max-width: 99px;
+    height: 21px;
+}
+
+.sponsor-index__logo .espn,
+.sponsor-index__logo .espn_sur {
+    max-width: 111px;
+    height: 27px;
+}
+
+
+/******************************
+    ORGANISM - CONTENT INDEX
+******************************/
+
+.index__container {
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+}
+
+.index__link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.index__title {
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    background: #003976;
+    z-index: 1;
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+}
+
+.index__title h3 {
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+.index__box:hover .index__title {
+    background: #000;
+}
+
+.index__box:hover .index__title h3 {
+    color: #fff;
+}
+
+
+/******************************
+    ORGANISM - POST ARCHIVE
+******************************/
+
+.content__archive {
+    justify-content: flex-start;
+}
+
+.archive__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.archive__item {
+    flex: 0 1 100%;
+}
+
+.archive__year {
+    position: relative;
+}
+
+.archive__year:after {
+    content: "\e903";
+    font-family: 'icomoon';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: .85rem;
+}
+
+.archive__dropdown li {
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+}
+
+.archive__dropdown li:hover {
+    background: #fff;
+}
+
+.archive__dropdown li:hover a,
+.archive__dropdown li:hover a:focus {
+    color: #0a140c;
+    text-decoration: none;
+}
+
+/** MOLECULE - PAGINATION **/
+
+.content__pagination .screen-reader-text { /* Wordpress automatically added heading */
+    display: none;
+}
+
+.content__pagination .nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.content__pagination .nav-links .page-numbers {
+    padding: 0 .5rem;
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    border-left: 1px solid #fff;
+}
+
+.content__pagination .nav-links .current {
+    background: #003976;
+    color: #000;
+}
+
+
+/* !MEDIA QUERIES */
+/* !Bootstrap xs: Small devices (360px) */
+@media (min-width: 22.500em) {
+
+
+}
+
+/* !Bootstrap xs: Small devices (landscape phones for a 320 - 480px) */
+@media (min-width: 30em) {
+
+
+}
+
+/* !Bootstrap xs: Small devices (landscape phones for a 360 - 640px) */
+@media (min-width: 40em) {
+
+
+    /***********************************
+        ORGANISM - NEWS PAGE LARGE PHONE
+    ***********************************/
+
+    .content__aside-advert,
+    .content__aside-related {
+        width: 50%;
+        float: left;
+    }
+
+    .content__aside-related {
+        padding-left: 1rem;
+    }
+
+    /** MOLECULE - META TEXT - FLOAT RIGHT SHARE ICONS **/
+
+    .content__meta--right {
+        width: 50%;
+        text-align: right;
+    }
+
+    /** MOLECULE - CONTACT FORM **/
+
+    .wpcf7-form {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .form-field {
+        width: 49%;
+        float: left;
+    }
+
+    .form-field--full {
+        width: 100%;
+    }
+
+    .form-field--submit {
+        width: 140px;
+    }
+
+}
+
+/* !Bootstrap sm: Medium devices (tablets, 768px and up) */
+@media (min-width: 48em) {
+
+    /************************************
+        ORGANISM - CONTENT INDEX TABLET
+    ************************************/
+
+    .index__box {
+        margin-bottom: 2rem;
+    }
+
+    /***********************************
+        ORGANISM - SOCIAL BOARD TABLET
+    **********************************/
+
+    /** MOLECULE - SOCIAL BLOCK **/
+
+    .social-board .social-board__box {
+        flex: 0 1 49%;
+    }
+
+    /***********************************
+        ORGANISM - POST ARCHIVE TABLET
+    ***********************************/
+
+    .archive__row {
+        justify-content: space-between;
+    }
+
+    .content__archive .post-list:nth-child(2n+1) {
+        margin-right: 2%;
+    }
+
+    .archive__item {
+        flex: 0 1 49%;
+    }
+
+    /** MOLECULE - PAGINATION **/
+
+    .content__pagination-block--previous {
+       padding-right: 1rem;
+    }
+
+    .content__pagination-block--next {
+       padding-left: 1rem;
+    }
+
+    .content__pagination-next {
+        margin: 0;
+        padding: 0;
+        border-left: 1px solid #d7d7d7;
+        border-top: 0;
+    }
+
+}
+
+/* !Bootstrap sm: Medium devices (landscape tablets, 1000px and up) */
+@media (min-width: 62.5em) {
+
+    /******************************************
+    	ORGANISM - FEATURED ARTICLES TABLET
+    ******************************************/
+
+    .article__inner {
+  		width: 70%;
+  		left: 15%;
+  	}
+
+  	.article__inner .article__meta .article__category,
+  	.article__inner .article__meta .article__date,
+  	.article__inner .article__meta .article__author {
+  		width: 33.33333%;
+  		float: left;
+  		margin: 0;
+  	}
+
+  	.article__image-caption--full {
+      position: absolute;
+  		width: 15.66666667%;
+  		left: 1rem;
+  		top: .3rem;
+  	}
+
+  	.article__image--fullwidth img {
+  		display: none;
+  		height: 0
+  	}
+
+  	.article__image--fullwidth {
+  		min-height: 40rem
+  	}
+
+  	.article__dfp {
+    	width: 300px;
+    	float: left;
+  	}
+
+  	.article__body--dfp {
+    	width: calc(100% - 300px);
+    	float: left;
+    	padding-right: 1.5rem;
+  	}
+
+    /***********************************
+        ORGANISM - CONTENT PAGE TABLET
+    ***********************************/
+
+    header[role="heading"] span {
+        padding-right: 1.25rem;
+    }
+
+    .submenu-container {
+        margin: 4rem auto 1rem;
+    }
+
+    .content__body {
+        padding: 0 1rem;
+    }
+
+    .content__body--sidebar {
+        width: calc(100% - 350px);
+        padding: 0 1.5rem 0 1rem;
+    }
+
+    .content__body--sidebar header[role="heading"] h1:after {
+        width: calc(100% + 1.5rem);
+    }
+
+    .content__sidebar {
+        width: 350px;
+        margin-top: 0;
+        padding: 1rem;
+    }
+
+    .content__sidebar--home {
+        float: right;
+        order: 0;
+    }
+
+    .content__sidebar-news-title {
+        display: block;
+    }
+
+    .content__sidebar-news-title span {
+        background: #eee;
+    }
+
+    .page-template-home .sidebar-fixtures__outer {
+        margin-top: 1.5rem;
+    }
+
+    .page-template-home .video-section {
+        padding: 1rem 0 0;
+    }
+
+    /** MOLECULE - SUBMENU **/
+
+    .sub-menu__main {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: .85rem;
+    }
+
+    .sub-menu__main .sub-menu__child-menu ul {
+        text-align: left;
+    }
+
+    .sub-menu__main .sub-menu__child-menu li {
+        padding: 0 .4rem;
+        font-size: .8rem;
+    }
+
+    .sub-menu__main .sub-menu__child-menu li a:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .sub-menu__main .sub-menu__child-menu li.current-menu-item {
+        background: #0a140c;
+    }
+
+    .sub-menu__main .sub-menu__child-menu li.current-menu-item a {
+        color: #fff;
+    }
+
+    .sub-menu__main .sub-menu__child-menu {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .sub-menu__main .sub-menu__button {
+        display: none;
+    }
+
+    .sub-menu__main .sub-menu__menu {
+        max-height: none;
+        visibility: visible;
+        overflow: visible;
+        position: relative;
+        right: 0;
+        top: 0;
+        background: transparent;
+        box-shadow: none;
+        border: 0;
+    }
+
+    .sub-menu__main .sub-menu__menu .menu li {
+        display: inline-block;
+        font-size: .9rem;
+        text-transform: uppercase;
+    }
+
+    .sub-menu__main .sub-menu__menu .menu li a {
+        font-weight: bold;
+    }
+
+    ul.sub-menu:not([aria-label="More"]){
+        display: none;
+    }
+
+    /** MOLECULE - SIDEBAR **/
+
+    .content__sidebar [data-tab-nav="competition-stats"] {
+        display: none;
+    }
+
+    .content__sidebar [data-tab-content="competition-stats"] > .data-tab {
+        display: block;
+    }
+
+    .sidebar__buttons {
+        padding-top: .8rem;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .sidebar__buttons--half .sidebar__link {
+        width: 100%;
+    }
+
+    .sidebar__buttons--half .sidebar__link:nth-child(2n+1) {
+        margin-right: 0;
+    }
+
+    /****************************************
+        ORGANISM - BROADCASTER INDEX TABLET
+    ****************************************/
+
+    /** ATOM - BROADCASTER SEARCH **/
+    .broadcaster-search,
+    .broadcaster-search__input {
+        text-align: left;
+    }
+
+    /***********************************
+        ORGANISM - SOCIAL BOARD TABLET
+    **********************************/
+
+    /** MOLECULE - SOCIAL BLOCK **/
+
+    .social-board .social-board__box {
+        flex: 0 1 24%;
+    }
+
+    /***********************************
+        ORGANISM - POST ARCHIVE TABLET
+    ***********************************/
+
+    .content__archive .post-list:nth-child(2n+1),
+    .content__archive .post-list {
+        margin-right: 1.3%;
+    }
+
+    .content__archive .post-list:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .archive__item {
+        flex: 0 1 24%;
+    }
+
+    /***********************************
+        ORGANISM - PARTNER PAGE TABLET
+    ***********************************/
+
+    .partner__news .news-section__list {
+        width: 100%;
+        float: left;
+    }
+
+    .partner__promo {
+        width: 350px;
+        margin-top: 0;
+        padding: 0 1rem 1rem;
+        float: left;
+    }
+
+    .partner__promo-box {
+        margin-bottom: 5rem;
+    }
+
+    .partner__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .partner__information {
+        width: calc(100% - 150px);
+        padding-left: 1rem;
+    }
+}
+
+/* !Bootstrap md: Small Laptop (desktops, 1039px and up) */
+@media (min-width: 65em) {
+
+    .table-responsive {
+        overflow: hidden;
+    }
+
+    [data-content="match_breakdown"] .table-responsive {
+        overflow-x: auto;
+    }
+
+    .article__body--dfp {
+    	width: calc(100% - 300px - 4.15%);
+  	}
+
+
+    /***********************************
+        ORGANISM - CONTENT PAGE DESKTOP
+    ***********************************/
+
+    header[role="heading"] h1:after {
+        bottom: 18px;
+    }
+
+    /***********************************
+        ORGANISM - NEWS PAGE DESKTOP
+    ***********************************/
+
+    .content__image p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content__excerpt {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+    .content__excerpt-gallery {
+        padding: 0;
+    }
+
+    .content__main {
+        position: relative;
+    }
+
+    .content__main-body {
+        margin-top: 1.5rem;
+    }
+
+    /** ATOM - NEWSLETTER **/
+    .content__newsletter {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /****************************************
+        ORGANISM - BROADCASTER PAGE DESKTOP
+    ****************************************/
+
+    /** ATOM - DEFAULT BROADCASTER LOGOS (WIDE AND SHORT) **/
+    .sponsor-index__logo img {
+        max-height: 125px;
+        max-width: 150px;
+    }
+
+    /** ATOM - OFF SQUARE BROADCASTER LOGOS **/
+    .sponsor-index__logo .supersport,
+    .sponsor-index__logo .nbc_sports_network,
+    .sponsor-index__logo .dazn {
+        max-width: 100px;
+        height: 101px;
+    }
+
+    /** ATOM - CUSTOM BROADCASTER LOGOS **/
+    .sponsor-index__logo .bbc_sport {
+        max-width: 99px;
+        height: 21px;
+    }
+
+    .sponsor-index__logo .espn,
+    .sponsor-index__logo .espn_sur {
+        max-width: 150px;
+        height: 50px;
+    }
+
+}
+
+/* !Bootstrap md: Large devices (desktops, 1232px and up) */
+
+@media (min-width: 77em) {
+
+    /***********************************
+        ORGANISM - CONTENT PAGE DESKTOP
+    ***********************************/
+
+    .content__body {
+        padding: 0;
+    }
+
+    .content__body--sidebar {
+        width: calc(100% - 390px);
+        padding: 0 3rem 0 0;
+    }
+
+    .content__body--sidebar header[role="heading"] h1::after {
+        width: calc(100% + 3rem);
+    }
+
+    .content__sidebar {
+        width: 390px;
+    }
+
+
+    /***********************************
+        ORGANISM - PARTNER PAGE DESKTOP
+    ***********************************/
+
+    .partner__promo {
+        width: 390px;
+    }
+}
+
+/* !Bootstrap md: Large devices (desktops, 1366px and up) */
+@media (min-width: 85.375em) {
+
+    /***********************************
+        ORGANISM - CONTENT PAGE DESKTOP
+    ***********************************/
+
+    .content__main-body {
+        width: calc(100% - (300px + 2rem) );
+    }
+
+    /***********************************
+        ORGANISM - NEWS PAGE DESKTOP
+    ***********************************/
+
+    /** MOLECULE - ASIDE **/
+
+    .content__aside {
+        border-bottom: none;
+        position: absolute;
+        width: 300px;
+        top: 0;
+        right: 0;
+    }
+
+    .content__aside-advert,
+    .content__aside-related {
+        width: 100%;
+        float: none;
+    }
+
+    .content__aside-related {
+        padding-left: 0;
+    }
+}
+
+/* Max content width */
+
+@media (min-width: 92.625em) {
+
+    .content__container {
+        padding: 0;
+    }
+
+}
+
+/* !Bootstrap lg: Extra Large devices (desktops, 1500px and up) */
+
+@media (min-width: 93.750em) {
+
+    /******************************************
+    	ORGANISM - FEATURED ARTICLES DESKTOP
+    ******************************************/
+
+    .article__inner {
+  		width: 50%;
+  		left: 25%;
+  	}
+
+    .image-Caption.full-widthCaption {
+  		left: 10%;
+  	}
+
+
+  	.article__image-caption--full {
+  		min-height: 55rem
+  	}
+
+
+}
+
+/* !Bootstrap lg: XL devices (desktops, 1696px and up) */
+@media (min-width: 106em) {
+
+}

@@ -1,0 +1,348 @@
+/* !UNIVERSAL ELEMENTS */
+
+/******************************
+    ORGANISM - TEAM HISTORY
+******************************/
+
+.team-history thead th,
+.team-history tbody td {
+    text-align: center;
+}
+
+.team-history .table-overall-heading th {
+    text-align: left;
+    border-left: 1px solid #fff;
+    border-bottom: 0;
+}
+
+.team-history thead th:first-of-type,
+.team-history thead th:nth-child(2),
+.team-history tbody td:first-of-type,
+.team-history tbody td:nth-child(2) {
+    text-align: left;
+}
+
+/********************************
+    ORGANISM - TEAM HEAD TO HEAD
+********************************/
+
+.team-head-to-head th,
+.team-head-to-head td {
+    text-align: center;
+}
+
+.team-head-to-head th:nth-child(1),
+.team-head-to-head td:nth-child(1) {
+    text-align: left;
+}
+
+/******************************
+    ORGANISM - TEAM TOP STATS
+******************************/
+
+.team-top-stats,
+.player-top-stats,
+.historic-player-stats {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-top-stats__container,
+.player-top-stats__container,
+.historic-player-stats__container {
+    width: 100%;
+    float: left;
+}
+
+/******************************
+    ORGANISM - PLAYER TOP STATS
+******************************/
+
+.player-top-stats .table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+
+/******************************
+    ORGANISM - HISTORICAL PLAYER STATS
+******************************/
+
+.performers__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.historic-player-stats__table.table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+[data-stats-expand] {
+    cursor: pointer;
+    position: relative;
+}
+
+[data-stats-expand]:after {
+    content: "\e903";
+    font-family: 'icomoon';
+    font-size: .8rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+[data-stats-expand].open:after {
+    content: "\e901";
+}
+
+.historic-player-stats__others {
+    display: none;
+}
+
+.historic-player-stats__others.open {
+    display: table-row-group;
+}
+
+.historic-player-stats__more td {
+    border: 0;
+}
+
+[data-tab-nav="widgets"] .tab,
+.widget-filters .tab {
+    background: #f6f6f6;
+}
+
+[data-tab-nav="widgets"] .tab:hover,
+.widget-filters .tab:hover,
+[data-tab-nav="widgets"] .tab.tab-nav-active,
+.widget-filters .tab.tab-nav-active {
+    background: #003976;
+    color: #fff;
+}
+
+.statistics__logo {
+    width: 25px;
+    height: 25px;
+}
+
+/******************************
+    ORGANISM - TEAM STATS
+******************************/
+
+.rounds-available {
+    margin-right: 145px;
+}
+
+.team-stats__select {
+    width: 140px;
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+
+.team-stats__select select {
+    text-transform: none;
+}
+
+/******************************
+    ORGANISM - STATS TABLES
+******************************/
+
+.team-stats__table {
+    overflow-x: scroll;
+}
+
+.team-stats__table tr th,
+.team-stats__table tr td {
+    font-size: .85rem;
+}
+
+.team-stats__table--competition-history .team-name,
+.team-stats__table--team-stat-list .team-name {
+    position: absolute;
+	z-index: 5;
+}
+
+.team-stats__table--competition-history .team-name,
+.team-stats__table--team-stat-list .team-name {
+	width: 8.5rem;
+}
+
+.team-stats__table--competition-history th:nth-child(2),
+.team-stats__table--competition-history td:nth-child(2),
+.team-stats__table--team-stat-list th:nth-child(2),
+.team-stats__table--team-stat-list td:nth-child(2) {
+    padding-left: 8.5rem;
+}
+
+.team-stats__table--team-stat-list td:nth-child(n+1) {
+    height: 41px;
+}
+
+.table-striped > tbody > .historic-player-stats__more > .bg-secondary {
+	background-color: #003976;
+    color: #fff;
+}
+
+/** MOLECULE - FULL BREAKDOWN - PLAYERS **/
+
+.team-stats__table--all-player-stats {
+    overflow: scroll;
+    max-height: 75vh;
+}
+
+.team-stats__table--all-player-stats .table__header {
+    position: -webkit-sticky;
+	position: sticky;
+    top: 0;
+    white-space: nowrap;
+}
+
+.team-stats__table--all-player-stats .player-name {
+	min-width: 14.5rem;
+	position: -webkit-sticky;
+	position: sticky;
+	left: 0;
+}
+
+.team-stats__table--all-player-stats th.player-name {
+    z-index: 5;
+}
+
+/* !MEDIA QUERIES */
+/* !Bootstrap xs: Small devices (360px) */
+@media (min-width: 22.500em) {
+
+
+}
+
+/* !Bootstrap xs: Small devices (landscape phones for a 320 - 480px) */
+@media (min-width: 30em) {
+
+
+}
+
+/* !Bootstrap xs: Small devices (landscape phones for a 360 - 640px) */
+@media (min-width: 40em) {
+
+}
+
+/* !Bootstrap sm: Medium devices (tablets, 768px and up) */
+@media (min-width: 48em) {
+
+    /*************************************
+        ORGANISM - TEAM TOP STATS TABLET
+    *************************************/
+
+    .player-top-stats,
+    .team-top-stats,
+    .historic-player-stats {
+        justify-content: space-between;
+    }
+
+    .player-top-stats__container,
+    .team-top-stats__container,
+    .historic-player-stats__container {
+        width: calc(50% - .5rem);
+        float: left;
+        overflow: hidden;
+    }
+
+    /****************************************
+        ORGANISM - TOURNAMENT STATS TABLET
+    ****************************************/
+
+    .tournament-stats {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .tournament-stats .table-responsive {
+        flex: 0 1 49%
+    }
+
+    /*********************************
+        ORGANISM - TEAM STATS TABLET
+    **********************************/
+
+    .team-stats {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .team-stats .team-stats__table {
+        flex: 0 1 49%;
+    }
+
+    .inline-short-name {
+        display: none;
+    }
+
+    .inline-long-name {
+        display: inline-block;
+    }
+
+}
+
+/* !Bootstrap sm: Medium devices (landscape tablets, 1000px and up) */
+@media (min-width: 62.5em) {
+    /******************************************
+        ORGANISM - HISTORIC TEAM STATS TABLET
+    ******************************************/
+
+    .statistics__logo {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* !Bootstrap md: Large devices (desktops, 1039px and up) */
+@media (min-width: 65em) {
+
+}
+
+/* !Bootstrap md: Large devices (desktops, 1232px and up) */
+
+@media (min-width: 77em) {
+
+    /*************************************
+        ORGANISM - TEAM TOP STATS DESKTOP
+    *************************************/
+
+    .player-top-stats__container,
+    .team-top-stats__container,
+    .historic-player-stats__container {
+        width: calc(33.333% - .5rem);
+    }
+
+    /****************************************
+        ORGANISM - TOURNAMENT STATS DESKTOP
+    ****************************************/
+
+    .tournament-stats .table-responsive {
+        flex: 0 1 32%
+    }
+
+    /**********************************
+        ORGANISM - TEAM STATS DESKTOP
+    **********************************/
+
+    .team-stats .team-stats__table {
+        flex: 0 1 32%;
+    }
+
+
+}
+
+/* !Bootstrap lg: Extra Large devices (desktops, 1500px and up) */
+
+@media (min-width: 93.750em) {
+
+}
+
+/* !Bootstrap lg: XL devices (desktops, 1696px and up) */
+@media (min-width: 106em) {
+
+}

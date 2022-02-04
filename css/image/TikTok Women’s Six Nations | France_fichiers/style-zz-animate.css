@@ -1,0 +1,119 @@
+/* !UNIVERSAL ELEMENTS */
+
+/* !ORGANISMS */
+
+
+/* CSS Animations */
+
+@keyframes fade-from-right {
+    from {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-from-left {
+    from {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes fade-from-top {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-from-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* !MEDIA QUERIES */
+/* !Bootstrap xs: Small devices (360px) */
+@media (min-width: 22.500em) {
+
+
+}
+
+/* !Bootstrap xs: Small devices (landscape phones for a 320 - 480px) */
+@media (min-width: 30em) {
+
+
+}
+
+/* !Bootstrap xs: Small devices (landscape phones for a 360 - 640px) */
+@media (min-width: 40em) {
+
+
+}
+
+/* !Bootstrap sm: Medium devices (tablets, 768px and up) */
+@media (min-width: 48em) {
+
+    @keyframes player-stats-position {
+        from {
+            opacity: 0;
+            transform: translateX(40px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+}
+
+/* !Bootstrap md: Large devices (desktops, 1039px and up) */
+@media (min-width: 65em) {
+
+
+}
+
+/* !Bootstrap md: Large devices (desktops, 1232px and up) */
+
+@media (min-width: 77em) {
+
+}
+
+/* !Bootstrap lg: Extra Large devices (desktops, 1500px and up) */
+
+@media (min-width: 93.750em) {
+
+}
+
+/* !Bootstrap lg: XL devices (desktops, 1696px and up) */
+@media (min-width: 106em) {
+
+}

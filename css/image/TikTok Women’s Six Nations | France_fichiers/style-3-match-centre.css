@@ -1,0 +1,2393 @@
+/* !UNIVERSAL ELEMENTS */
+
+/* !ORGANISMS */
+
+.match-page {
+    background: var(--grey-bg);
+}
+
+.single-live_matches .submenu-container,
+.single-preview .submenu-container,
+.single-report .submenu-container,
+.page-template-page-live .submenu-container,
+.page-template-page-overview .submenu-container {
+    display: none;
+}
+
+@media (min-width: 62.5em) {
+
+    .match-page {
+        margin-top: 10px;
+    }
+
+}
+
+.match__title {
+    font-size: 1.25rem;
+}
+
+.match-centre__navigation {
+    overflow: hidden;
+    position: relative;
+    height: 60px;
+    margin-top: -35px;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+}
+
+.match-centre__navigation-tabs {
+    display: flex;
+    height: 80px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.match-centre__navigation-tabs .tab {
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 0;
+    background: var(--primary);
+    color: #fff;
+    padding: 0 1.25rem;
+    font-weight: 400;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+}
+
+.match-centre__navigation-tabs .tab:hover,
+.match-centre__navigation-tabs .tab:focus {
+    background: rgba(255,255,255,.5);
+}
+
+.match-centre__navigation-tabs .tab.tab-nav-active {
+    background: var(--grey-bg);
+    color: var(--primary);
+}
+
+@media (min-width: 40em) {
+    .match-centre__navigation {
+        width: 100%;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 48em) {
+
+    .match-centre__navigation-tabs {
+        justify-content: center;
+    }
+
+    .match-centre__navigation-tabs .tab {
+        border-radius: 5px 5px 0 0 !important;
+        background: rgba(255,255,255,.35);
+        margin: 0 .25rem;
+    }
+
+}
+
+
+.match__documents h4 {
+    font-size: 1.25rem;
+}
+
+.match-page .bannerPartner {
+    margin: -1.5rem -1rem 1.5rem;
+}
+/***********************************
+    ORGANISM - MATCH INFORMATION
+***********************************/
+
+.fixture-info__logo {
+    width: 70px;
+    height: 70px;
+}
+
+.match__information {
+    width: 100%;
+    padding-bottom: 4rem;
+}
+
+.fixture-info__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.fixture-info__team-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70px 1fr 70px;
+    column-gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.fixture-info__date-container {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 .5rem;
+}
+
+.fixture-info__date {
+    padding: .25rem .75rem;
+    border-radius: 5px;
+    font-size: .9rem;
+}
+
+.fixture-info__ft {
+    font-size: 1.8rem;
+}
+
+.fixture-info__ht {
+    font-size: .75rem;
+    margin-top: .25rem;
+}
+
+.fixture-info__potm {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid #fff;
+    font-size: .8rem;
+    width: 100%;
+    max-width: 450px;
+}
+
+.fixture-info__potm-headshot {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.fixture-info__potm a:hover {
+    color: var(--secondary);
+}
+
+.fixture-info__meta {
+    font-size: .75rem;
+    line-height: 1.2rem;
+    margin: .5rem 0 -1.5rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.fixture-info__broadcasters {
+    width: 100%;
+    max-width: 300px;
+    margin: -.5rem auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixture-info__broadcaster {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixture-info__broadcaster img {
+    width: 100%;
+    max-width: 80px;
+    max-height: 20px;
+}
+
+
+@media (min-width: 30em) {
+
+    .fixture-info__team-info {
+        grid-template-columns: 100px 1fr 100px;
+    }
+
+    .fixture-info__logo {
+        width: 90px;
+        height: 90px;
+    }
+
+
+}
+
+@media (min-width: 40em) {
+
+    .fixture-info__broadcasters {
+        max-width: 500px;
+        gap: 1rem;
+    }
+
+}
+
+@media (min-width: 48em) {
+
+    .fixture-info__inner,
+    .fixture-info__potm {
+        max-width: 700px;
+    }
+
+    .fixture-info__team-info {
+        grid-template-columns: 120px 1fr 120px;
+    }
+
+    .fixture-info__logo {
+        width: 110px;
+        height: 110px;
+    }
+
+    .fixture-info__ft {
+        font-size: 3rem;
+        padding-bottom: .5rem;
+    }
+
+    .fixture-info__ht {
+        font-size: 1rem;
+        margin-top: .5rem;
+    }
+
+    .fixture-info__meta {
+        font-size: .9rem;
+        margin: .5rem 0 -1rem;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: auto;
+        align-items: center;
+    }
+
+    .fixture-info__meta span {
+        padding: 0 .5rem;
+        display: inline-block;
+    }
+
+    .fixture-info__meta span + span {
+        border-left: 1px solid #929292;
+    }
+
+    .fixture-info__broadcaster img {
+        max-width: 100px;
+        max-height: 25px;
+    }
+
+    .fixture-info__potm {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, auto);
+        column-gap: .75rem;
+        margin-top: 2.5rem;
+        padding-top: 2rem;
+        font-size: .85rem;
+    }
+
+}
+
+@media (min-width: 62.5em) {
+
+    .fixture-info {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .fixture-info:before {
+        content: '';
+        background-image: url('assets/img/6n-ball.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 0;
+        opacity: .1;
+        width: 360px;
+        height: calc(360px * 1.7);
+        position: absolute;
+        left: -50px;
+        top: 50%;
+        filter: brightness(2) saturate(0);
+        transform: translateY(-50%);
+    }
+
+}
+
+@media (min-width: 77em) {
+
+    .fixture-info:before {
+        width: 400px;
+        height: calc(400px * 1.7);
+    }
+}
+
+
+@media (min-width: 85.375em) {
+
+    .fixture-info:before {
+        width: 450px;
+        height: calc(450px * 1.7);
+    }
+}
+
+/********************************
+    TEMPLATE - TAB GRID LAYOUTS
+********************************/
+
+.match-centre__preview-preview,
+.match-centre__preview-sidebar,
+.match-centre__report-report,
+.match-centre__report-sidebar,
+.match-centre__overview-main,
+.match-centre__overview-sidebar {
+    width: 100%;
+    display: inline-block;
+}
+
+.match-centre__live,
+.match-centre__live-blog,
+.match-centre__live-sidebar {
+    width: 100%;
+}
+
+.match-centre__overview-main,
+.match-centre__preview-preview,
+.match-centre__live-blog,
+.match-centre__report-report {
+    margin-bottom: 2rem;
+}
+
+.match-centre__overview-sidebar,
+.match-centre__preview-sidebar,
+.match-centre__report-sidebar,
+.match-centre__live-sidebar {
+    text-align: center;
+}
+
+
+/* ANIMATIONS */
+
+.fixture-info__inner {
+    animation: fade-from-top .1s ease-in-out;
+}
+
+.fixture-info__potm,
+.match-centre__overview-sidebar,
+.match-centre__preview-sidebar,
+.match-centre__live-sidebar,
+.match-centre__report-sidebar,
+.match-centre__preview-sidebar [data-content].tab-content-active,
+.match-centre__live-sidebar [data-content].tab-content-active,
+.match-centre__report-sidebar [data-content].tab-content-active,
+.match-content__matchstats .content-player-stats.tab-content-active {
+    animation: fade-from-right .1s ease-in-out;
+}
+
+.match-centre__overview-main,
+.match-centre__preview-preview,
+.match-centre__live-blog,
+.match-centre__report-report,
+.match-content__matchstats .content-team-stats.tab-content-active {
+    animation: fade-from-left .1s ease-in-out;
+}
+
+.match-centre__video .news-section__list {
+    animation: fade-from-bottom .1s ease-in-out;
+}
+
+.match-centre__player-table-wrapper .tab-content-active td {
+    animation: fade-in .2s ease-in-out;
+}
+
+.match-centre__player-table-wrapper .tab-content-active .team-position {
+    animation: player-stats-position .2s ease-in-out;
+}
+
+@media (min-width: 62.5em) {
+
+    .match-centre__overview.tab-content-active,
+    .match-centre__preview.tab-content-active,
+    .match-centre__report.tab-content-active,
+    .match-centre__live-content {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 375px;
+        column-gap: 2rem;
+    }
+
+    .match-centre__live-blog,
+    .match-centre__live-sidebar {
+        display: block;
+    }
+
+}
+
+@media (min-width: 77em) {
+
+    .match-centre__overview.tab-content-active,
+    .match-centre__preview.tab-content-active,
+    .match-centre__report.tab-content-active,
+    .match-centre__live-content {
+        grid-template-columns: 1fr 400px;
+        column-gap: 4rem;
+    }
+
+}
+
+/* MATCH CENTRE COMMON ELEMENTS */
+
+/* MATCH CENTRE TABLES */
+
+.match-centre__legend {
+    border-radius: 5px;
+    padding: .25rem .5rem;
+    margin: .25rem;
+    font-size: .75rem;
+}
+
+.match-centre__player-table {
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-light);
+    padding-bottom: .5rem;
+}
+
+.match-centre__stats-table-container {
+    padding-top: .5rem;
+}
+
+.match-centre__player-table > thead > tr > th,
+.match-centre__player-table > tbody > tr.replacements > td,
+.match-centre__stats-table .match-breakdown__separator {
+    background: var(--primary);
+    color: #fff;
+    font-size: .9rem;
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    border: 0;
+    padding: .75rem .5rem;
+}
+
+.match-centre__stats-table > thead > tr > th,
+.match-centre__stats-table > tbody + tbody {
+    background: none;
+    border: 0;
+    text-align: center;
+    padding: 1rem .5rem;
+}
+
+.match-centre__player-table > tbody > tr > td,
+.match-centre__stats-table > tbody > tr > td {
+    border: 0;
+    vertical-align: middle;
+}
+
+.match-centre__stats-table > tbody > tr > td {
+    text-align: center;
+    padding: .75rem .5rem .5rem;
+    white-space: normal !important;
+}
+
+.match-centre__player-table > tbody > tr > td.table__stat {
+    vertical-align: middle;
+    font-family: var(--heading-font);
+}
+
+.match-centre__player-table > tbody:before,
+.match-centre__player-table > tbody:after,
+.match-centre__stats-table > tbody:before,
+.match-centre__stats-table > tbody:after {
+    content: '';
+    display: block;
+    height: .25rem; /* Padding above and below tbody */
+    background: #fff;
+}
+
+.match-centre__player-table th:first-of-type,
+.match-centre__stats-table th:first-of-type {
+    border-top-left-radius: 5px;
+}
+
+.match-centre__player-table th:last-of-type,
+.match-centre__stats-table th:last-of-type {
+    border-top-right-radius: 5px;
+}
+
+.match-centre__player-table tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+.match-centre__player-table tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+}
+
+.match-centre__stats-table .match__logo {
+    width: 50px;
+    height: 50px;
+}
+
+.match-centre__player-table .team-position {
+    width: 20px;
+    height: 20px;
+    line-height: 19px;
+    vertical-align: middle;
+    border-radius: 5px;
+    font-family: var(--heading-font);
+    font-size: .9rem;
+}
+
+
+@media (min-width: 40em) {
+
+    .match-centre__player-table .team-position {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: .25rem;
+        font-size: 1rem;
+    }
+
+}
+
+/* MATCH CENTRE STATS */
+
+.key-stat__stat {
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-light);
+    padding: 1rem;
+}
+
+.team-stat.key-stat__stat {
+    width: 100%;
+}
+
+.match__logo-container img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.progress-stat__title {
+    font-size: .9rem;
+}
+
+.progress-stat {
+    width: 100%;
+}
+
+.progress-stat .progress-bar {
+    max-height: 50px;
+    line-height: 32px;
+}
+
+.progress-stat .progress-bar:first-of-type {
+    border-radius: 5px 0 0 5px;
+}
+
+.progress-stat .progress-bar:last-of-type {
+    border-radius: 0 5px 5px 0;
+}
+
+.progress-stat:first-of-type p {
+    margin-top: 0;
+}
+
+/* MATCH CENTRE POST TITLES */
+
+.match-page header[role="heading"] span {
+    background: none !important;
+}
+
+.match-page header[role="heading"] h1 {
+    font-size: 1.6rem;
+	line-height: 1.8rem;
+    margin-bottom: .5rem;
+}
+
+.match-page header[role="heading"] h1:before,
+.match-page header[role="heading"] h1:after {
+    display: none !important;
+}
+
+.match-page .content__meta,
+.match-page .content__meta--bottom-border {
+    border: 0;
+}
+
+.match-page .content__author {
+    padding: .75rem 0 0;
+}
+
+.match-page .content__author p span {
+    font-family: var(--heading-font) !important;
+}
+
+@media (min-width: 62.5em) {
+
+
+    .match-page header[role="heading"] h1 {
+        font-size: 1.7rem;
+        line-height: 1.8rem;
+    }
+
+}
+
+/********************************
+    TEMPLATE - MATCH OVERVIEW
+********************************/
+
+.match-table .match-table__heading,
+.match-table .match-table__row,
+.match-table .match-table__record {
+    text-align: center;
+}
+
+.match-table > thead > tr > .match-table__heading {
+    font-size: 1.25rem;
+}
+
+
+/***************************
+    ORGANISM - MATCH - LAST TIME
+***************************/
+
+.last-time {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    align-items: center;
+    column-gap: .5rem;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-light);
+}
+
+.last-time__title {
+    font-size: 1.25rem;
+    padding-right: .5rem;
+    border-right: 1px solid var(--secondary);
+    margin: 0;
+    align-self: stretch;
+    display: grid;
+    align-content: center;
+    font-weight: 400;
+}
+
+.last-time__details {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.last-time__score {
+    font-size: 1.25rem;
+}
+
+.last-time__team .match__logo {
+    width: 45px;
+    height: 45px;
+}
+
+@media (min-width: 30em) {
+
+    .last-time {
+        grid-template-columns: 120px 1fr;
+        column-gap: 1rem;
+    }
+
+    .last-time__title {
+        padding-right: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .last-time__score {
+        font-size: 1.5rem;
+    }
+
+    .last-time__team .match__logo {
+        width: 55px;
+        height: 55px;
+    }
+
+}
+
+
+@media (min-width: 40em) {
+
+    .last-time {
+        grid-template-columns: 180px 1fr;
+        column-gap: 2rem;
+    }
+
+    .last-time__title {
+        padding-right: 2rem;
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (min-width: 62.5em) {
+
+    .last-time {
+        grid-template-columns: 70px 1fr;
+        column-gap: .5rem;
+    }
+
+    .last-time__title {
+        font-size: 1.25rem;
+        padding-right: .5rem;
+    }
+
+    .last-time__score {
+        font-size: 1.25rem;
+    }
+
+    .last-time__team .match__logo {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+/******************************************
+    ORGANISM - MATCH - LAST THREE MATCHES
+*******************************************/
+
+.last-three {
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-light);
+}
+
+.last-three__title {
+    padding: 1.25rem;
+    border-bottom: 2px solid #b48a55;
+}
+
+@media (min-width: 40em) {
+
+    .last-three__title {
+        font-size: 1.25rem;
+    }
+
+}
+
+/***************************
+    ORGANISM - MATCH - KEY STATS
+***************************/
+
+.key-stats {
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-light);
+    padding: .5rem 0;
+}
+
+.key-stats__title {
+    padding: .45rem .5rem .5rem;
+    border-radius: 5px;
+    line-height: 1rem;
+    max-width: 125px;
+    margin: 0 auto;
+}
+
+@media (min-width: 40em) {
+
+    .key-stats__title {
+        max-width: 175px;
+    }
+
+}
+
+/***************************
+    ORGANISM - MATCH - SEASON SO FAR
+***************************/
+
+.season-so-far {
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-light);
+    background: #fff;
+}
+
+.season-so-far .match-centre__stats-table > thead > tr > th {
+    background: var(--primary);
+    vertical-align: middle;
+}
+
+@media (min-width: 40em) {
+
+    .season-so-far .key-stats__title {
+        font-size: 1.1rem;
+        padding: .7rem .5rem .75rem;
+    }
+
+}
+
+/***************************
+    ORGANISM - MATCH - INFO
+***************************/
+
+.match-info {
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-light);
+}
+
+.match-info__row {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    column-gap: .5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.match-info .match-info__row:last-of-type {
+    border-bottom: 0;
+}
+
+.match-info__title,
+.match-info__content {
+    font-size: .95rem;
+}
+
+.match-info__content {
+    overflow: hidden;
+}
+
+@media (min-width: 40em) {
+
+    .match-info__row {
+        grid-template-columns: 150px 1fr;
+    }
+
+}
+
+/***************************
+    ORGANISM - MATCH - STARTING LINEUPS
+***************************/
+
+.match-centre__lineups-team {
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-light);
+    background: #fff;
+    margin: 1rem 0 2rem;
+    padding: 1rem;
+}
+
+.content-teams__team-A.tab-content-active {
+    animation: fade-from-left .2s ease-in;
+}
+
+.content-teams__team-B.tab-content-active {
+    animation: fade-from-right .2s ease-in;
+}
+
+
+.content-teams__lineups .content-teams__logo {
+    display: grid;
+    grid-template-columns: 45px auto;
+    align-items: center;
+    text-align: left;
+    column-gap: .75rem;
+    width: 100%;
+}
+
+.content-teams__lineups .content-teams__logo-name {
+    font-size: 1.2rem;
+}
+
+.team-player {
+    width: 100%;
+    margin: .25rem 0;
+    grid-template-columns: 40px 40px 1fr;
+    align-items: center;
+}
+
+.match-centre__lineups-team.tab-content-active .team-player {
+    display: grid;
+}
+
+.team-headshot {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.team-person {
+    vertical-align: middle;
+}
+
+.content-teams__replacements {
+    width: 100%;
+    padding: .65rem;
+    text-align: left;
+}
+
+.team-player__a .team-position,
+.team-player__b .team-position {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+.team-player .team-position {
+    border-radius: 5px 0 0 5px;
+}
+
+.team-player .team-headshot img {
+    border-radius: 0 5px 5px 0;
+}
+
+.team-player__a .team-person,
+.team-player__b .team-person {
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+@media (min-width: 40em) {
+
+    .match-centre__lineups-team {
+        padding: 1.25rem;
+    }
+
+    .content-teams__lineups .content-teams__logo {
+        grid-template-columns: 55px auto;
+    }
+
+    .content-teams__lineups .content-teams__logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .content-teams__lineups .content-teams__logo-name {
+        font-size: 1.4rem;
+    }
+
+    .team-headshot {
+        width: 50px;
+        height: 50px;
+    }
+
+    .team-player {
+        grid-template-columns: 50px 50px 1fr;
+        margin: .35rem 0;
+    }
+
+    .team-player__a .team-position,
+    .team-player__b .team-position {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 48em) {
+
+    .match-centre__lineups {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        background: #fff;
+        box-shadow: var(--box-shadow-light);
+        border-radius: 5px;
+        padding: .5rem;
+        margin: .5rem 0 2rem;
+    }
+
+    .content-teams__lineups .content-teams__team-A .content-teams__logo {
+        grid-template-columns: auto 55px;
+        justify-content: end;
+    }
+
+    .content-teams__lineups .content-teams__team-A .content-teams__logo img {
+        order: 1;
+    }
+
+    .match-centre__lineups-team {
+        display: block;
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .content-teams__team-A {
+        animation: fade-from-left .2s ease-in;
+    }
+
+    .content-teams__team-B {
+        animation: fade-from-right .2s ease-in;
+    }
+
+    .team-player__a .team-position {
+        border-radius: 0 5px 5px 0;
+    }
+
+    .team-player__a .team-headshot img {
+        border-radius: 5px 0 0 5px;
+    }
+
+    .team-player {
+        display: grid;
+        grid-template-columns: 50px 50px 1fr;
+        margin: .5rem 0;
+    }
+
+    .team-player__a {
+        grid-template-columns: 1fr 50px 50px;
+        justify-content: end;
+        justify-items: end;
+    }
+
+    .team-player__a .team-position {
+        order: 3;
+    }
+
+    .team-player__a .team-headshot {
+        order: 2;
+    }
+
+    .team-player__a .team-person {
+        order: 1;
+    }
+
+    .content-teams__replacements-a {
+        text-align: right;
+    }
+
+}
+
+/*********************************
+    ORGANISM - MATCH - VIDEOS
+*********************************/
+
+.match-centre__video .video__item {
+    cursor: pointer;
+}
+
+[data-loader="video"] {
+    width: 100%;
+}
+
+
+/******************************
+    TEMPLATE - MATCH PREVIEW
+*******************************/
+
+.match__image img {
+    width: 100%;
+}
+
+ /***************************
+    TEMPLATE - MATCH REPORT
+***************************/
+
+.team__event-a,
+.team__event-b {
+    min-height: 1px;
+}
+
+.team__event-a {
+    border-right: 1px solid #ccc;
+}
+
+.table > thead > tr > th.table__heading,
+.table > tbody > tr > td.table__stat {
+    text-align: center;
+}
+
+.match-centre__summary {
+    width: 100%;
+}
+
+.match-centre__preview-preview header[role="heading"],
+.match-centre__report-report header[role="heading"],
+.match-centre__live-blog header[role="heading"] {
+    margin-top: 0;
+}
+
+.match-preview .content__meta--right,
+.match-centre__report-report .content__meta--right {
+    width: 100%;
+    text-align: left;
+}
+
+.match-centre__report-report .content__main iframe {
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+}
+
+.team-person {
+    font-size: .8rem;
+}
+
+/*********************************
+    ORGANISM - MATCH - LIVE TAB
+*********************************/
+
+/* Arena.IM overrides */
+[data-content="live-blog"] .summary--wrapper,
+[data-content="live-blog"] .summary--container {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+[data-content="live-blog"] .summary--title {
+    display: none;
+}
+
+[data-content="live-blog"] .live-pbp--container {
+    margin: 0;
+    margin-top: 1.2rem;
+    max-width: 100%;
+}
+
+[data-content="live-blog"] .live-message--message--wrapper,
+[data-content="live-blog"] .live-message--media {
+    max-width: 100%;
+}
+
+
+#liveblogpro #lbp #lbp-headline,
+#liveblogpro #lbp #lbp-summary {
+    font-family: "Trade Gothic", Helvetica, Arial, sans-serif;
+}
+
+.match-tweets-headline,
+#liveblogpro #lbp #lbp-headline {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    overflow: visible;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+#liveblogpro #lbp #lbp-headline::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: -1rem;
+    top: 0;
+    width: 5px;
+    background: #b48a55;
+}
+
+#liveblogpro #lbp #lbp-date,
+#liveblogpro #lbp .lbp-item-time {
+    font-size: 1rem;
+    font-family: "Trade Gothic", Helvetica, Arial, sans-serif;
+}
+
+#liveblogpro #lbp p {
+    font-size: 1.1rem;
+}
+
+#liveblogpro #lbp p span{
+    font-size: 1.1rem !important;
+}
+
+#liveblogpro #lbp #lbp-items li .lbp-item-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 .25rem;
+    float: right;
+}
+
+#liveblogpro #lbp .lbp-item-entry {
+    background: #f3f3f3;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+}
+
+#liveblogpro #lbp #lbp-items li .lbp-item-entry {
+    width: 100%;
+    margin: 0;
+    margin-top: .5rem;
+}
+
+#liveblogpro #lbp li:not(.lbp-item-coloured) .lbp-item-entry {
+    border-left: 5px solid #000;
+    padding-left: 1rem;
+}
+
+#liveblogpro #lbp #lbp-items .lbp-item-entry blockquote::before {
+    display: none;
+}
+
+.match-tweet {
+    border: 1px solid #ccc;
+    border-left: 3px solid #b48a55;
+}
+
+.match-tweet-logo,
+.match-tweet-details {
+	vertical-align: middle;
+}
+
+/* MOLECULE - TEXT COMMENTARY */
+
+.commentary__events .flex-container {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+.commentary__events .column-reverse {
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+
+.commentary__event-item {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-light);
+    overflow: hidden;
+    animation: fade-from-left .1s ease-in-out;
+}
+
+.event-time,
+.event-info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+}
+
+.event-time {
+    flex: 15%;
+}
+
+.event-commentary,
+.event-player {
+    flex: 85%;
+}
+
+.event-score {
+    width: 100%;
+}
+
+/* TIMELINE */
+
+.timeline__events .flex-container {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+.timeline__events .column-reverse {
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+
+.timeline__events {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-light);
+}
+
+.timeline__event {
+    min-height: 1px;
+    width: 100%;
+    float: left;
+    position: relative;
+    font-size: .8rem;
+    line-height: 1rem;
+    padding-bottom: 1rem;
+}
+
+.timeline__event::after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #eee;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 0;
+}
+
+.timeline__event p {
+    margin: 0;
+}
+
+.timeline__score {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+
+.timeline__score p {
+    font-size: 0;
+}
+
+.timeline__score p > span {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+}
+
+.timeline__event .timeline__score p > span:first-of-type {
+    border-radius: 5px 0 0 5px;
+}
+
+.timeline__detail {
+    width: 50%;
+    float: left;
+    min-height: 1px;
+    position: relative;
+    z-index: 5;
+    min-height: 50px;
+}
+
+.timeline__event--teama {
+    text-align: right;
+}
+
+.timeline__event--teamb {
+    text-align: left;
+}
+
+.timeline__events .match__logo {
+    width: 50px;
+    height: 50px;
+}
+
+.timeline__event--teama .timeline__detail {
+    padding-right: 45px;
+    padding-left: .5rem;
+}
+
+.timeline__event--teamb .timeline__detail {
+    margin-left: 50%;
+    padding-left: 45px;
+    padding-right: .5rem;
+}
+
+.timeline__replacement p i {
+    font-size: 0.6rem;
+    vertical-align: middle;
+}
+
+.timeline__replacement .timeline__player--on i {
+    color: #148d00;
+
+}
+
+.timeline__replacement .timeline__player--off i {
+    color: #d8252e;
+}
+
+/* SUMMARY */
+
+.match-centre__summary {
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-light);
+}
+
+.match-centre__summary .match__logo {
+    width: 50px;
+    height: 50px;
+}
+
+.match-centre__summary-header p {
+    border-radius: 5px;
+}
+
+/****************************************
+    ORGANISM - MATCH - PLAYER STATS TAB
+****************************************/
+
+.match-centre__player-table-wrapper {
+    padding: 0 0 .25rem 0;
+    border-radius: 5px;
+    background: white;
+    box-shadow: var(--box-shadow-light);
+}
+
+.match-centre__player-table--stats {
+    width: 100%;
+    text-align: center;
+    display: block;
+    overflow-x: auto;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.match-centre__player-table--stats thead > tr > th,
+.match-centre__player-table--stats tbody > tr > td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.match-centre__player-table--stats > tbody:before,
+.match-centre__player-table--stats > tbody:after {
+    display: none;
+}
+
+.match-centre__player-table--stats tbody > tr > td.player-report {
+    text-align: left;
+    width: 250px;
+}
+
+table.match-centre__player-table--stats > tbody > tr.replacements > td {
+    text-align: left;
+}
+
+.match-content__playerstats {
+    position: relative;
+}
+
+.match-content__playerstats > div {
+    position: static;
+    margin-left: 169px;
+    overflow-y: visible;
+}
+
+.match-centre__player-table--stats .team-headshot {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.match-centre__player-table--stats thead > tr > th {
+    border-bottom: 0;
+}
+
+.match-centre__player-table--stats tbody > tr.replacements > td {
+    height: 48px;
+}
+
+.match-centre__player-table--stats thead > tr > th,
+.match-centre__player-table--stats tbody > tr > td {
+    height: 50px;
+}
+
+.match-centre__player-table--stats thead > tr > th:first-of-type,
+.match-centre__player-table--stats tbody > tr > td:first-of-type {
+    position: absolute;
+    left: 0;
+    top: auto;
+    width: 170px;
+}
+
+.player-report-wrapper {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    column-gap: 0.25rem;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.match-centre__player-table--stats .team-position {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+
+.match-centre__player-table--stats .player-name-wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.match-centre__player-table--stats::-webkit-scrollbar {
+    height: 8px;
+    cursor: pointer;
+}
+
+.match-centre__player-table--stats::-webkit-scrollbar-track {
+    background: #eee;
+    border-radius: 50px;
+    margin-right: 1rem;
+}
+
+.match-centre__player-table--stats::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    transition: .2s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.match-centre__player-table--stats::-webkit-scrollbar-thumb:hover,
+.match-centre__player-table--stats::-webkit-scrollbar-thumb:active {
+    background: var(--primary);
+}
+
+@media (min-width: 40em) {
+
+    .match-centre__player-table--stats .team-position {
+        font-size: .9rem;
+    }
+
+}
+
+@media (min-width: 48em) {
+    .match-content__playerstats > div {
+        margin-left: 248px;
+    }
+
+    .match-centre__player-table--stats tbody > tr > td.player-report .team-headshot {
+        display: inline-block;
+    }
+
+    .match-centre__player-table--stats tbody > tr > td {
+        height: 55px;
+    }
+
+    .match-centre__player-table--stats thead > tr > th:first-of-type,
+    .match-centre__player-table--stats tbody > tr > td:first-of-type {
+        width: 250px;
+    }
+
+    .match-centre__player-table--stats .team-position {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-right: 0;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .match-centre__player-table--stats .team-headshot img {
+        border-radius: 0 5px 5px 0;
+        margin-left: -.25rem;
+    }
+
+    .player-report-wrapper {
+        grid-template-columns: 85px 1fr;
+    }
+}
+
+@media (min-width: 62.5em) {
+
+    .match-content__playerstats > div {
+        margin-left: 273px;
+    }
+
+    .match-centre__player-table--stats thead > tr > th:first-of-type,
+    .match-centre__player-table--stats tbody > tr > td:first-of-type {
+        width: 275px;
+    }
+
+    .match-centre__player-table--stats .team-person {
+        font-size: .9rem;
+    }
+
+    .match-centre__player-table--stats .team-position {
+        font-size: 1rem;
+    }
+
+    .player-report-wrapper {
+        padding-left: .5rem;
+    }
+
+}
+
+@media (min-width: 85.375em) {
+
+    .match-centre__player-table--stats {
+        display: table;
+        overflow-x: auto;
+    }
+
+    .match-centre__player-table--stats tbody > tr > td {
+        padding: .75rem .5rem .5rem;
+        height: 62.5px;
+    }
+}
+
+
+/* Molecule - Pop Up Video Modal */
+.modal-content {
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+}
+
+.modal-content .modal-header {
+    border: none;
+}
+
+.modal-content .modal-header .close {
+    margin-top: 0;
+}
+
+.modal-content .close-button {
+    float: right;
+}
+
+.modal-content .close-button button {
+    background: none;
+    border: none;
+}
+
+.modal-content .close-button button span {
+    font-size: 3rem;
+}
+
+.modal-dialog {
+    width: 360px;
+    height: auto;
+}
+
+.modal.in .modal-dialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+ /*********************************
+    ORGANISM - MATCH - TEAM STATS
+***********************************/
+.team-stats__block {
+    width: 100%;
+}
+
+.team-stats__tab-title {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.team-stats__tab-title h3 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.team-stats__block-title {
+    margin: 0;
+    padding: 2rem 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: .2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-stats__block-title:hover,
+.team-stats__block-title:focus {
+    border-color: var(--tertiary);
+}
+
+.team-stats__block.open .team-stats__block-title {
+    border-bottom: 0;
+}
+
+.team-stats__block-title h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.team-stats__block-title span {
+    font-size: .9rem;
+}
+
+.team-stats__block-title i {
+    font-size: .75rem;
+    margin-left: .25rem;
+}
+
+.team-stats__block .stat-block--open,
+.team-stats__block.open .stat-block--closed {
+    display: none;
+}
+
+.team-stats__block.open .stat-block--open,
+.team-stats__block .stat-block--closed {
+    display: block;
+}
+
+.team-stats__stats.stat-block--toggle {
+    display: none;
+}
+
+.team-stats__stats.stat-block--toggle.active {
+    display: flex;
+    animation: fade-from-right .2s ease-in-out;
+}
+
+.match-centre__stat-title {
+    font-size: .8rem;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+[data-match-stat-type="chart"] .match-centre__stat-title {
+    margin: 1.5rem 0 1rem
+}
+
+[data-match-stat-type="percentage"] .match-centre__stat-title {
+    font-size: .75rem;
+}
+
+.team-stats__stats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.team-stats__charts-container {
+    max-width: 225px;
+    margin: 1rem auto;
+}
+
+
+.team-stat__percentage-container {
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-light);
+}
+
+.team-stat__standard-stat {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.team-stat__standard-stat.team-stat__team-b {
+    border-top: 1px solid #ddd;
+}
+
+.team-stat__standard-team {
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.team-stat__standard-stat p {
+    margin: 0;
+}
+
+.team-stat__standard-value {
+    font-size: 1.5rem;
+}
+
+.team-stat__standard {
+    padding: 1.5rem 2.5rem;
+
+}
+
+[data-match-stat-type] {
+    width: 100%;
+}
+
+[data-match-stat-type="percentage"] > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3rem 1.5rem;
+}
+
+.team-stat__percentage-container {
+    width: 100%;
+}
+
+
+[data-match-stat-type] > div {
+    border-bottom: 1px solid #ddd;
+}
+
+.team-stats__stats [data-match-stat-type]:last-of-type > div {
+    border-bottom: 0;
+}
+
+[data-stat-block] {
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 35em) {
+
+    [data-match-stat-type="chart"] {
+        width: 50%;
+    }
+
+    [data-match-stat-type="chart"] .match-centre__stat-title {
+        text-align: left;
+    }
+
+    .team-stats__stats [data-match-stat-type="chart"]:nth-last-of-type(2) > div {
+        border-bottom: 0;
+    }
+
+}
+
+@media (min-width: 40em) {
+
+    .match-centre__stat-title {
+        font-size: .9rem;
+    }
+
+    [data-match-stat-type="percentage"] .match-centre__stat-title {
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 48em) {
+
+    .match-centre__stat-title {
+        text-align: left;
+    }
+
+    .team-stats__stats {
+
+    }
+
+    [data-match-stat-type] {
+        width: 50%;
+    }
+
+    [data-match-stat-type] > div {
+        border-top: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    [data-match-stat-type="standard"] > div {
+        height: 100%;
+    }
+
+    .team-stats__stats [data-match-stat-type]:last-of-type > div,
+    .team-stats__stats [data-match-stat-type]:nth-last-of-type(2) > div {
+        border-bottom: 0;
+    }
+
+    .team-stats__stats [data-match-stat-type]:nth-of-type(odd) > div {
+        border-right: 1px solid #ddd;
+    }
+
+    .team-stats__stats [data-match-stat-type="chart"] > div {
+        border-right: 0 !important;
+    }
+
+    .team-stat__standard-value {
+        font-size: 1.75rem;
+    }
+
+    .team-stats__charts-container {
+
+    }
+
+
+
+}
+
+@media (min-width: 50em) {
+
+    [data-match-stat-type="chart"] {
+        width: calc(100% / 3);
+    }
+
+    [data-match-stat-type="chart"] .match-centre__stat-title {
+        min-height: 40px;
+        padding-right: 1.5rem;
+    }
+
+}
+
+@media (min-width: 62.5em) {
+
+    [data-match-stat-type] {
+        width: calc(100% / 3);
+    }
+
+    .team-stats__stats [data-match-stat-type]:nth-last-of-type(3) > div,
+    .team-stats__stats [data-match-stat-type="chart"]:nth-last-of-type(4) > div {
+        border-bottom: 0;
+    }
+
+    .team-stats__stats [data-match-stat-type] > div {
+        border-right: 1px solid #ddd;
+    }
+
+    .team-stats__stats [data-match-stat-type]:nth-of-type(3n + 3) > div {
+        border-right: 0;
+    }
+
+    .team-stat__percentage {
+    }
+
+    /* Temp fix to match heights between charts and stats on the same row */
+    [data-match-stat-type="chart"] + [data-match-stat-type="standard"] .team-stat__standard-container {
+        min-height: 226px;
+    }
+
+    [data-match-stat-type="percentage"] > div {
+        padding: 3rem 1.5rem;
+    }
+
+}
+
+@media (min-width: 70em) {
+
+    [data-match-stat-type="chart"] {
+        width: 25%;
+    }
+
+}
+
+@media (min-width: 77em) {
+
+    [data-match-stat-type="percentage"] > div {
+        padding: 3rem 3rem;
+    }
+
+}
+
+/***********************************
+    ORGANISM - AWS STATS
+***********************************/
+
+.match__aws-container,
+.match__aws-image-wrap,
+.match__aws-image {
+    position: relative;
+}
+
+.match__aws-logo {
+    width: 100%;
+    background: #231f20;
+    text-align: center;
+}
+
+.match__aws-logo img {
+    width: 150px;
+    max-height: none;
+}
+
+.match__aws-logo.fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 20;
+}
+
+.match__aws-image:after {
+    content: '';
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.match__aws-stat-number {
+    position: absolute;
+    color: #fff;
+    z-index: 10;
+}
+
+.match__aws-stat {
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+.match__aws-stat-number[data-position="down-centre"] {
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.match__aws-stat-number[data-position="down-right"] {
+    bottom: 1rem;
+    left: auto;
+    right: 1rem;
+}
+
+.match__aws-stat-number[data-position="down-left"] {
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.match__aws-stat-number[data-position="up-centre"] {
+    bottom: auto;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.match__aws-stat-number[data-position="up-right"] {
+    bottom: auto;
+    top: 1rem;
+    left: auto;
+    right: 1rem;
+}
+
+.match__aws-stat-number[data-position="up-left"] {
+    bottom: auto;
+    top: 1rem;
+    left: 1rem;
+}
+
+.match__aws-stat-number[data-position="left-centre"] {
+    bottom: auto;
+    top: 50%;
+    left: 1rem;
+    transform: translate(0,-50%);
+}
+
+.match__aws-stat-number[data-position="right-centre"] {
+    bottom: auto;
+    top: 50%;
+    left: auto;
+    right: 1rem;
+    transform: translate(0,-50%);
+}
+
+.match__aws-information .match__aws-stat {
+    display: none;
+}
+
+/** MOLECULE - NO IMAGE FALLBACK **/
+
+.match__aws-no-image {
+    min-height: 400px;
+}
+
+.match__aws-no-image .match__aws-image-wrap {
+    display: none;
+}
+
+.match__aws-no-image .match__aws-information {
+    margin-top: 1rem;
+}
+
+.match__aws-no-image .match__aws-information .match__aws-stat {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.match__aws-no-image .match__aws-information .match__aws-stat-number .match__aws-stat {
+    color: #000;
+}
+
+/* !MEDIA QUERIES */
+/* !Bootstrap xs: Small devices (360px) */
+@media (min-width: 22.500em) {
+
+}
+
+/* !Bootstrap xs: Small devices (landscape phones for a 320 - 480px) */
+@media (min-width: 30em) {
+
+}
+
+/* !Bootstrap xs: Small devices (landscape phones for a 360 - 640px) */
+@media (min-width: 40em) {
+
+    /********************************
+        ORGANISM - MATCH - TEAMS TAB
+    *********************************/
+
+
+    /*********************************
+        ORGANISM - MATCH - VIDEO TAB
+    *********************************/
+    .video__item {
+        flex: 1 1 50%;
+    }
+
+    .modal-dialog {
+        width: 728px;
+    }
+}
+
+/* !Bootstrap sm: Medium devices (tablets, 768px and up) */
+@media (min-width: 48em) {
+
+    /*******************************************************
+        ORGANISM - MATCH - MATCH PREVIEW / REPORT - TABLET
+    ********************************************************/
+    .match-preview .content__meta--right,
+    .match-centre__report-report .content__meta--right {
+        width: 46%;
+        text-align: right;
+    }
+
+    .match-tweets-hashtag {
+        float: right;
+    }
+
+    /***********************************
+        ORGANISM - AWS STATS - TABLET
+    ***********************************/
+
+    .match__aws-stat-number {
+        display: none;
+    }
+
+    .match__aws-information {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        max-width: 450px;
+        z-index: 5;
+    }
+
+    .match__aws-information .match__aws-stat {
+        display: block;
+        top: 0;
+        left: 0;
+        position: relative;
+    }
+
+    .match__aws-information p {
+        color: #fff;
+    }
+
+    .match__aws-stat-information p {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+    .match__aws-stat {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+   .match__aws-information[data-position="down-centre"] {
+        bottom: 1rem;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+
+    .match__aws-information[data-position="down-right"] {
+        bottom: 1rem;
+        left: auto;
+        right: 1rem;
+    }
+
+    .match__aws-information[data-position="down-left"] {
+        bottom: 1rem;
+        left: 1rem;
+    }
+
+    .match__aws-information[data-position="up-centre"] {
+        bottom: auto;
+        top: 1rem;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+
+    .match__aws-information[data-position="up-right"] {
+        bottom: auto;
+        top: 5rem;
+        left: auto;
+        right: 1rem;
+    }
+
+    .match__aws-information[data-position="up-left"] {
+        bottom: auto;
+        top: 5rem;
+        left: 1rem;
+    }
+
+    .match__aws-information[data-position="left-centre"] {
+        bottom: auto;
+        top: 50%;
+        left: 1rem;
+        transform: translate(0,-50%);
+    }
+
+    .match__aws-information[data-position="right-centre"] {
+        bottom: auto;
+        top: 50%;
+        left: auto;
+        right: 1rem;
+        transform: translate(0,-50%);
+    }
+
+
+    /** MOLECULE - NO IMAGE FALLBACK **/
+
+    .match__aws-no-image {
+        margin: 1.5rem 0;
+    }
+
+    .match__aws-no-image .match__aws-information p,
+    .match__aws-no-image .match__aws-stat-information p {
+        color: #000;
+    }
+
+    .match__aws-no-image .match__aws-information {
+        padding: 0;
+    }
+
+}
+
+/* !Bootstrap md: Small Laptop (desktops, 1000px and up) */
+@media (min-width: 62.5em) {
+
+    .match-centre__live-navigation {
+        display: none;
+    }
+
+    /********************************************
+        ORGANISM - MATCH - TEAMS TAB - DESKTOP
+    ********************************************/
+
+    .team__link:hover {
+        text-decoration: none;
+        color: #b48a55;
+    }
+
+    /********************************************
+        ORGANISM - MATCH - LIVE TAB - DESKTOP
+    ********************************************/
+
+    #liveblogpro #lbp #lbp-headline::before {
+        content: '';
+        position: absolute;
+        top: 19px;
+        left: calc(-100% - 1rem);
+        width: 100%;
+        height: 5px;
+        background: #b48a55;
+    }
+
+    .match-centre__report-report .content__main iframe {
+        height: 500px;
+    }
+
+    /********************************************
+        ORGANISM - MATCH - VIDEO TAB DESKTOP
+    ********************************************/
+
+    .video__item {
+        flex-wrap: nowrap
+    }
+
+    .video__headline p {
+        font-size: 1.25rem;
+    }
+
+}
+
+/* !Bootstrap md: Large devices (desktops, 1232px and up) */
+
+@media (min-width: 77em) {
+
+    /***********************************
+        ORGANISM - AWS STATS - DESKTOP
+    ***********************************/
+
+    .match__aws-stat {
+        font-size: 7rem;
+        line-height: 7rem;
+    }
+
+    .match__aws-information {
+        left: 3rem;
+        bottom: 2rem;
+    }
+
+    .match__aws-stat-information p {
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+    }
+
+}
+
+/* !Bootstrap md: Large devices (desktops, 1366px and up) */
+@media (min-width: 85.375em) {
+
+     /********************************************
+        ORGANISM - MATCH - TEAMS TAB - DESKTOP
+    ********************************************/
+
+    .team-headshot {
+        display: inline-block;
+    }
+
+
+    /***********************************
+        ORGANISM - AWS STATS - DESKTOP
+    ***********************************/
+
+    .match__aws-stat {
+        font-size: 11rem;
+        line-height: 11rem;
+    }
+
+    .match__aws-stat-information p {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+}
+
+/* !Bootstrap lg: Extra Large devices (desktops, 1500px and up) */
+
+@media (min-width: 93.750em) {
+
+}
+
+/* !Bootstrap lg: XL devices (desktops, 1696px and up) */
+@media (min-width: 106em) {
+
+    /***********************************
+        ORGANISM - AWS STATS - DESKTOP
+    ***********************************/
+
+    .match__aws-container {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+}
+
+/* White background behind broadcasters */
+
+.fixture-info__broadcasters [data-broadcaster="francetv"],
+.fixture-info__broadcasters [data-broadcaster="fr2"],
+.fixture-info__broadcasters [data-broadcaster="nbc"],
+.fixture-info__broadcasters [data-broadcaster="youtube"],
+.fixture-info__broadcasters [data-broadcaster="bbciplayer"],
+.fixture-info__broadcasters [data-broadcaster="skysport italia"],
+.fixture-info__broadcasters [data-broadcaster="s4cclic"],
+.fixture-info__broadcasters [data-broadcaster="fr4"] {
+    background: #fff;
+}
+
+.fixture-info__broadcasters [data-broadcaster="francetv"],
+.fixture-info__broadcasters [data-broadcaster="fr2"],
+.fixture-info__broadcasters [data-broadcaster="nbc"],
+.fixture-info__broadcasters [data-broadcaster="youtube"],
+.fixture-info__broadcasters [data-broadcaster="s4cclic"],
+.fixture-info__broadcasters [data-broadcaster="fr4"] {
+    padding: .15rem;
+}
+
+.fixture-info__broadcasters [data-broadcaster="skysport italia"] {
+    padding-left: .25rem;
+}
+
+.fixture-info__broadcasters [data-broadcaster="bbciplayer"] {
+    padding: .25rem .15rem .15rem;
+}

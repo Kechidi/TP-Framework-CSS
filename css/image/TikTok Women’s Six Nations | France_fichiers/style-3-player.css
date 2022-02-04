@@ -1,0 +1,735 @@
+/* !UNIVERSAL ELEMENTS */
+
+/**************************************
+    ORGANISM - HISTORICAL SQUAD INDEX
+**************************************/
+
+/** MOLECULE - SQUAD BLOCK **/
+
+.squad-block {
+    position: relative;
+    display: flex;
+}
+
+.squad-block__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.squad-block__top-tier {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: calc(100% - 80px);
+    float: left;
+}
+
+.squad-block__top-tier .squad-block__headshot {
+    width: 95px;
+    float: left;
+}
+
+.squad-block__top-tier .squad-block__player-info {
+    width: calc(100% - 95px);
+    float: left;
+    padding: 0 .7rem;
+    line-height: 1rem;
+}
+
+.squad-block__player-name {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+.squad-block__bottom-tier {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80px;
+    float: left;
+    align-items: flex-end;
+    border: 5px solid #000;
+    border-width: 0 0 0 5px;
+}
+
+.squad-block__bottom-tier .squad-block__stat {
+    padding: 0 .5rem;
+}
+
+.squad-block__bottom-tier .squad-block__stat label {
+    margin: 0;
+}
+
+/** ATOM - TEAM COLOUR BAR **/
+
+[data-team="wales"] .squad-block__bottom-tier {
+    border-color: #d8252e;
+}
+
+[data-team="england"] .squad-block__bottom-tier {
+    border-color: #a61930;
+}
+
+[data-team="france"] .squad-block__bottom-tier {
+    border-color: #003567;
+}
+
+[data-team="ireland"] .squad-block__bottom-tier {
+    border-color: #006642;
+}
+
+[data-team="italy"] .squad-block__bottom-tier {
+    border-color: #0053A1;
+}
+
+[data-team="scotland"] .squad-block__bottom-tier {
+    border-color: #013B69;
+}
+
+/**************************************
+    ORGANISM - SQUAD INDEX - LIST
+**************************************/
+
+.squad-list {
+    width: calc(100% - 150px);
+    overflow-x: auto;
+    margin-left: 149px;
+    overflow-y: visible;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+
+.squad-list__container {
+    position: relative;
+}
+
+.squad-list [data-headshot] {
+    display: none;
+}
+
+.squad-list .table {
+    margin-bottom: 0;
+}
+
+.squad-list .table > thead > tr > th > a {
+    color: var(--secondary);
+}
+
+.squad-list::-webkit-scrollbar {
+    height: 8px;
+    cursor: pointer;
+}
+
+.squad-list::-webkit-scrollbar-track {
+    background: #eee;
+    border-radius: 50px;
+    margin-right: 1rem;
+}
+
+.squad-list::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    transition: .2s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.squad-list::-webkit-scrollbar-thumb:hover,
+.squad-list::-webkit-scrollbar-thumb:active {
+    background: var(--primary);
+}
+
+.squad-list .table > tbody > tr > td:nth-child(1),
+.squad-list .table > thead > tr > th:nth-child(1) {
+    position: absolute;
+    width: 150px;
+    left: 0;
+    top: auto;
+    text-align: left;
+}
+
+.squad-list .table > tbody > tr:nth-child(1) > td:nth-child(1) {
+    margin-top: 0;
+}
+
+.squad-list .table thead tr:last-of-type th:last-of-type {
+    border-radius: 0;
+}
+
+.squad-list .table > tbody > tr > td,
+.squad-list .table > thead > tr > th {
+    margin: 0;
+    margin-top: 0px;
+    white-space: nowrap;
+    font-size: .85rem;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.squad-list .table > tbody > tr > td:nth-child(2),
+.squad-list .table > thead > tr > th:nth-child(2) {
+    text-align: left;
+}
+
+.squad-list .table > thead > tr > th.squad-list__heading {
+    border: 0;
+    padding: .5rem;
+}
+
+.squad-list .table > thead > tr > td.squad-list__heading-gap {
+    display: none;
+}
+
+
+.squad-list a {
+    text-decoration: none;
+}
+
+.squad-list [data-name]:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 62.5em) {
+
+    .squad-list .table > thead > tr > td.squad-list__heading-gap {
+        display: table-cell;
+    }
+
+}
+
+@media (min-width: 77em) {
+
+    .squad-list .table > tbody > tr > td:nth-child(1),
+    .squad-list .table > thead > tr > th:nth-child(1) {
+        margin-top: -1px;
+    }
+
+}
+
+
+/**************************************
+    ORGANISM - PLAYER SEARCH
+**************************************/
+
+.player-search__container .squad-block__bottom-tier {
+    align-items: center;
+}
+
+.squad-block__separator {
+    display: none;
+}
+
+/**************************************
+    ORGANISM - PLAYER PAGE
+**************************************/
+
+.player .data-tab h4 {
+    text-align: left;
+    margin: 1.25rem 0;
+}
+
+.player .data-tab {
+    padding: 2rem 0;
+}
+
+.player .data-tab.tab-content-active {
+    animation: fade-from-right .2s;
+}
+
+.player .player__media {
+    margin-top: 1.5rem;
+}
+
+/** MOLECULE - PLAYER INFORMATION **/
+
+.player__headshot {
+    max-width: 310px;
+    margin: 0 auto 1rem;
+    text-align: center;
+}
+
+/** MOLECULE - PLAYER APPS & PTS **/
+
+.player__tournament-stats {
+    width: calc(100% + 2rem);
+    float: left;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 1.5rem -1rem 0;
+}
+
+.player__tournament-stats .player__stat {
+    width: 50%;
+    float: left;
+    margin: 0;
+    background: #000;
+    color: #fff;
+}
+
+.player__tournament-stats .player__stat--pts {
+    background: #b48a55;
+    color: #000;
+}
+
+.player__alternative .player__tournament-stats {
+    display: none;
+}
+
+
+/** MOLECULE - PLAYER MEDIA **/
+
+.player__news {
+    margin: 0 0 2rem;
+}
+
+.player__images {
+    margin: 0 -5px 2rem;
+}
+
+
+/** MOLECULE - PLAYER LIST **/
+
+.player__list .player__list-item {
+    width: 100%;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.player__list .player__list-item a {
+    display: inline-flex;
+    align-items: center;
+}
+
+.player__list-item img {
+    width: 50px;
+    float: left;
+}
+
+.player__list-item span {
+    width: calc(100% - 50px);
+    float: left;
+}
+
+/** MOLECULE - PLAYER TABLES **/
+
+.player-match-table tr:last-of-type td,
+.player__breakdown-table tr:last-of-type td {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.player__breakdown-table th,
+.player__breakdown-table td {
+    border: 0 !important;
+}
+
+.player-match-summary tr:last-of-type td[data-row="TmnmDisplay"] {
+    color: #f1f1f1;
+}
+
+.player .content__body .table-responsive {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-light);
+    margin: 1rem 0;
+}
+
+.player .player__breakdown .table-responsive {
+    margin-bottom: 2.5rem;
+}
+
+.player .table {
+    margin: 0;
+}
+
+.player .table-responsive::-webkit-scrollbar {
+    height: 8px;
+    cursor: pointer;
+    margin-top: .5rem;
+}
+
+.player .table-responsive::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 50px;
+    margin-right: 1rem;
+}
+
+.player .table-responsive::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    transition: .2s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.player .table-responsive::-webkit-scrollbar-thumb:hover,
+.player .table-responsive::-webkit-scrollbar-thumb:active {
+    background: var(--primary);
+}
+
+[data-row="LnupYell"] i,
+[data-role="yellow_cards"] i {
+    color: #d8ba09;
+}
+
+[data-row="LnupRed"] i,
+[data-role="red_cards"] i {
+    color: #ff0000;
+}
+
+.player__breakdown-table {
+    white-space: nowrap;
+}
+
+.player .team-key {
+    margin: 1.5rem -.25rem 0;
+}
+
+.player .team-key ul li {
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem !important;
+    margin: 0.25rem !important;
+    font-size: .75rem !important;
+    background: #d7d7d7 !important;
+    color: #2e2e2e !important;
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+
+.player__profile {
+    margin: 2.5rem 0;
+}
+
+/* !MEDIA QUERIES */
+/* !Bootstrap xs: Small devices (360px) */
+@media (min-width: 22.500em) {
+
+
+}
+
+/* !Bootstrap xs: Small devices (landscape phones for a 320 - 480px) */
+@media (min-width: 30em) {
+
+    /**************************************
+        ORGANISM - PLAYER PAGE
+    **************************************/
+
+    /** MOLECULE - PLAYER INFORMATION **/
+
+    .player__profile .player__profile-block {
+        width: 50%;
+        float: left;
+    }
+
+}
+
+/* !Bootstrap xs: Small devices (landscape phones for a 360 - 640px) */
+@media (min-width: 40em) {
+
+    /******************************************************
+        ORGANISM - HISTORICAL SQUAD INDEX LANDSCAPE PHONE
+    ******************************************************/
+
+    /** MOLECULE - SQUAD BLOCK **/
+
+    .squad-index {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 .5rem;
+    }
+
+    .squad-block {
+        width: 50%;
+        float: left;
+        padding: 0 .5rem;
+    }
+
+    /**************************************
+        ORGANISM - PLAYER SEARCH TABLET
+    **************************************/
+
+    .player-search__container .broadcaster-search {
+        padding: 0 .5rem;
+    }
+
+    .player-search__container .squad-index {
+        padding: 0;
+    }
+
+}
+
+/* !Bootstrap sm: Medium devices (tablets, 768px and up) */
+@media (min-width: 48em) {
+
+    /**************************************
+        ORGANISM - PLAYER SEARCH TABLET
+    **************************************/
+
+    .player-search__container .squad-index {
+        padding: 0;
+    }
+
+    /**************************************
+        ORGANISM - PLAYER PAGE TABLET
+    **************************************/
+
+    .player__header {
+        position: relative;
+        display: flex;
+        margin: 1.5rem 0 1rem;
+        background: #f1f1f1;
+    }
+
+    /** MOLECULE - PLAYER INFORMATION **/
+
+    .player__information {
+        display: inline-flex;
+        align-items: center;
+        width: calc(100% - 120px);
+        float: left;
+        padding-right: 1rem;
+    }
+
+    .player__headshot {
+        float: left;
+        margin: 0;
+    }
+
+    .player__profile {
+        width: calc(100% - 310px);
+        float: left;
+        padding-left: 1.5rem;
+    }
+
+    .player__profile .player__profile-block {
+        width: 100%;
+    }
+
+    /** MOLECULE - PLAYER APPS & PTS **/
+
+    .player__tournament-stats {
+        width: 120px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border: 0;
+        background: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .player__tournament-stats .player__stat {
+        width: 100%;
+        text-align: right;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .player__tournament-stats .player__stat label {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        width: 100%;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    /** MOLECULE - PLAYER TABLES **/
+    .player__match .fixture-controls,
+    .player__breakdown .fixture-controls {
+        position: absolute;
+        top: 0.5rem;
+        right: 0;
+        margin: 0;
+    }
+
+}
+
+/* !Bootstrap sm: Medium devices (landscape tablets, 1000px and up) */
+@media (min-width: 62.5em) {
+
+    /*********************************************
+        ORGANISM - HISTORICAL SQUAD INDEX TABLET
+    *********************************************/
+
+    /** MOLECULE - SQUAD BLOCK **/
+
+    .squad-block {
+        width:25%;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+
+    .squad-block__top-tier,
+    .squad-block__top-tier .squad-block__headshot,
+    .squad-block__top-tier .squad-block__player-info,
+    .squad-block__bottom-tier {
+        width: 100%;
+    }
+
+    .squad-block__top-tier .squad-block__player-info {
+        text-align: center;
+        padding: .8rem;
+    }
+
+    .squad-block__top-tier .squad-block__player-info p:first-of-type {
+        margin: 0 0 .4rem;
+    }
+
+    .squad-block__bottom-tier {
+        border-width: 5px 0 0;
+        flex-direction: row;
+    }
+
+    .squad-block__bottom-tier .squad-block__stat {
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+
+    /**************************************
+        ORGANISM - PLAYER SEARCH TABLET
+    **************************************/
+
+    .squad-block__separator {
+        display: inline-block;
+    }
+
+    .player-search__container .squad-block__top-tier .squad-block__player-info p:first-of-type {
+        margin: 0;
+    }
+
+    /**************************************
+        ORGANISM - PLAYER PAGE TABLET
+    **************************************/
+
+    [data-tab-nav="player-tabs"],
+    [data-tab-nav="player-tables"] {
+        display: none;
+    }
+
+    .player__table-content .data-tab {
+        text-align: left;
+    }
+
+    [data-tab-nav="player-media"] {
+        text-align: left;
+    }
+
+    /** MOLECULE - PLAYER INFORMATION **/
+
+    .player__headshot {
+        width: 200px;
+    }
+
+    .player__profile {
+        width: calc(100% - 200px);
+    }
+
+    /** MOLECULE - PLAYER LIST **/
+
+    .player__list {
+        margin-top: 3rem;
+    }
+
+}
+
+/* !Bootstrap md: Small Laptop (desktops, 1039px and up) */
+@media (min-width: 65em) {
+
+}
+
+/* !Bootstrap md: Large devices (desktops, 1232px and up) */
+
+@media (min-width: 77em) {
+
+    /***********************************************
+        ORGANISM - HISTORICAL SQUAD INDEX DESKTOP
+    ************************************************/
+
+    /** MOLECULE - SQUAD BLOCK **/
+
+    .squad-block {
+        width:16.66%;
+    }
+
+    .squad-block__bottom-tier {
+        padding: .4rem 0;
+    }
+
+    /*****************************************
+        ORGANISM - SQUAD INDEX DESKTOP - LIST
+    *****************************************/
+
+    .squad-list {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .squad-list .table > tbody > tr > td:nth-child(1),
+    .squad-list .table > thead > tr > th:nth-child(1) {
+        position: inherit;
+        width: auto;
+    }
+
+    .squad-list .table > thead > tr > th > a {
+        color: var(--secondary);
+    }
+
+    /**************************************
+        ORGANISM - PLAYER PAGE DESKTOP
+    **************************************/
+
+    /** MOLECULE - PLAYER INFORMATION **/
+
+    .player__headshot {
+        width: 250px;
+    }
+
+    .player__profile {
+        width: calc(100% - 250px);
+    }
+}
+
+/* !Bootstrap md: Large devices (desktops, 1366px and up) */
+@media (min-width: 85.375em) {
+
+    /*****************************************
+        ORGANISM - SQUAD INDEX DESKTOP - LIST
+    *****************************************/
+
+    .squad-list [data-headshot] {
+        display: inline-block;
+        width: 50px;
+        margin-right: .8rem;
+    }
+
+}
+
+/* !Bootstrap lg: Extra Large devices (desktops, 1500px and up) */
+
+@media (min-width: 93.750em) {
+
+    /*****************************************
+        ORGANISM - SQUAD INDEX DESKTOP - LIST
+    *****************************************/
+
+    .squad-list [data-headshot] {
+        width: 60px;
+    }
+
+
+}
+
+/* !Bootstrap lg: XL devices (desktops, 1696px and up) */
+@media (min-width: 106em) {
+
+}
