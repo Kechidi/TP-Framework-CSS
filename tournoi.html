@@ -1,55 +1,56 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
-<head>
+<html>
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tournoi de six nations 2022 féminin </title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-<section class="hero is-medium is-primary">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-8-desktop is-offset-2-desktop">
-                    <img src="css/image/logo.png" alt="Made with Bulma" width="128" height="24">
-                    <h1 class="title is-2 is-spaced">
-                        <p class="title is-1 is-spaced">Tournoi</p>
-                    </h1>
-                    <h2 class="subtitle is-4">
-                        Le Tournoi des six nations aura lieu du 26 mars au 30 avril 2022<strong>compte a robot</strong> project.
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
 
-                    </h2>
+  <section class="hero is-primary is-bold">
+      <div class="hero-body">
+          <div class="container ">
+              <div class="columns ">
+                  <div class="column">
+
+                      <img class="image" src="css/image/Womens-SixNations-RGB_AW-2.svg " width="500" height="500"/>
+                  </div>
+                  <div class="column is-8-desktop is-offset-2-desktop">
+                      <h2 class="title is-3 is-spaced"> Tournoi des Six Nations 2022 féminin</h2>
+                      <p class="subtitle is-5 ">Tournoi des Six Nations féminin aura lieu du 26 mars au 30 avril 2022 </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <label id="Compte"></label>
+      <script type="text/javascript">
+
+          var Affiche=document.getElementById("Compte");
+          function Rebour() {
+              var date1 = new Date();
+              var date2 = new Date ("Mar 26, 2022 00:00:00");
+              var sec = (date2 - date1) / 1000;
+              var n = 24 * 3600;
+              if (sec > 0) {
+                  j = Math.floor (sec / n);
+                  h = Math.floor ((sec - (j * n)) / 3600);
+                  mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
+                  sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
+                  Affiche.innerHTML = +j +" j "+ h +" h "+ mn +" min "+ sec + " s";
+                  window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
+              }
+              tRebour=setTimeout ("Rebour();", 1000);
+          }
+          Rebour();
+      </script>
+
+  </section>
 
 
-                    <label id="Compte"></label>
-                    <script type="text/javascript">
-
-                        var Affiche=document.getElementById("Compte");
-                        function Rebour() {
-                            var date1 = new Date();
-                            var date2 = new Date ("Mar 26, 2022 00:00:00");
-                            var sec = (date2 - date1) / 1000;
-                            var n = 24 * 3600;
-                            if (sec > 0) {
-                                j = Math.floor (sec / n);
-                                h = Math.floor ((sec - (j * n)) / 3600);
-                                mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
-                                sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
-                                Affiche.innerHTML = +j +" j "+ h +" h "+ mn +" min "+ sec + " s";
-                                window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
-                            }
-                            tRebour=setTimeout ("Rebour();", 1000);
-                        }
-                        Rebour();
-                    </script>
-
-                </div>
-                </div>
-            </div>
-        </div>
-</section>
+<section class="section">
 
 <div class="columns">
     <section class="section is-hidden-mobile">
@@ -96,34 +97,248 @@
 
 
 
-
-
-
-
-
-<footer class="footer has-text-centered">
         <div class="container">
+            <div class="column">
             <div class="columns">
-                <div class="column is-8-desktop is-offset-2-desktop">
-                    <p>
-                        <strong class="has-text-weight-semibold">
-                            <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.4</a>
-                        </strong>
-                    </p>
-                    <p>
-                        <small>
-                            Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
-                        </small>
-                    </p>
-                    <p style="margin-top: 1rem;">
-                        <a href="http://bulma.io">
-                            <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-                        </a>
-                    </p>
-                </div>
+                <div class="column">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="http://localhost/perso/TP-Framework-CSS/index.html">Tournoi des six nations féminin 2022 </a></li>
+                <li class="is-active"><a href="tournoi.html" aria-current="page">Tours</a></li>
+            </ul>
+        </nav>
             </div>
-        </div>
-    </footer>
-    <script type="text/javascript" src="lib/main.js"></script>
-</body>
-</html>
+            </div>
+
+        <div class="columns">
+            <div class="column">
+
+                <table class="table is-striped is-fluid is-fullwidth ">
+                    <tr>
+                        <th><button class="button is-ligh" onclick="window.location.href = 'tour1.html';" > Tour 1 </button></th>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="css/image/ecrosse.png"width="50 " height="50">
+                        </td>
+                        <td>
+                            <p><br>Ecrosse / Angleterre </p>
+                        </td>
+                        <td>
+                            <img src="css/image/ENGL3338.svg" width="50 " height="50">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="css/image/IREL2041.svg"width="50 " height="50">
+                        </td>
+                        <td>
+                            <p><br>Irlande / Pays de Galles </p>
+                        </td>
+                        <td>
+                            <img src="css/image/WALE7552.svg" width="50 " height="50">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="css/image/FRAN3158.svg"width="50 " height="50">
+                        </td>
+                        <td>
+                            <p><br>France/ Italie</p>
+                        </td>
+                        <td>
+                            <img src="css/image/ITAL6499.svg" width="50 " height="50">
+                        </td>
+
+                    </tr>
+
+
+
+                </table>
+
+
+                <table class="table is-striped  is-fullwidth ">
+                    <tr>
+
+
+                        <th><button class="button is-ligh" > Tour 3 </button></th>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="css/image/ecrosse.png"width="50 " height="50">
+                        </td>
+                        <td>
+                            <p><br>Ecrosse / Angleterre </p>
+                        </td>
+                        <td>
+                            <img src="css/image/ENGL3338.svg" width="50 " height="50">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="css/image/IREL2041.svg"width="50 " height="50">
+                        </td>
+                        <td>
+                            <p><br>Irlande / Pays de Galles </p>
+                        </td>
+                        <td>
+                            <img src="css/image/WALE7552.svg" width="50 " height="50">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="css/image/FRAN3158.svg"width="50 " height="50">
+                        </td>
+                        <td>
+                            <p><br>France/ Italie</p>
+                        </td>
+                        <td>
+                            <img src="css/image/ITAL6499.svg" width="50 " height="50">
+                        </td>
+
+                    </tr>
+
+                </table>
+            </div>
+            <div class="column">
+                <table class="table is-striped  is-fullwidth">
+                    <tr>
+
+
+                        <th><button class="button is-ligh" > Tour 2 </button></th>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="css/image/ecrosse.png"width="50 " height="50">
+                        </td>
+                        <td>
+                            <p><br>Ecrosse / Angleterre </p>
+                        </td>
+                        <td>
+                            <img src="css/image/ENGL3338.svg" width="50 " height="50">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="css/image/IREL2041.svg"width="50 " height="50">
+                        </td>
+                        <td>
+                            <p><br>Irlande / Pays de Galles </p>
+                        </td>
+                        <td>
+                            <img src="css/image/WALE7552.svg" width="50 " height="50">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="css/image/FRAN3158.svg"width="50 " height="50">
+                        </td>
+                        <td>
+                            <p><br>France/ Italie</p>
+                        </td>
+                        <td>
+                            <img src="css/image/ITAL6499.svg" width="50 " height="50">
+                        </td>
+
+                    </tr>
+
+
+                </table>
+
+
+                <table class="table is-striped is-fullwidth ">
+                    <tr>
+
+
+                        <th><button class="button is-ligh" > Tour 4 </button></th>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="css/image/ecrosse.png"width="50 " height="50">
+                        </td>
+                        <td>
+                            <p><br>Ecrosse / Angleterre </p>
+                        </td>
+                        <td>
+                            <img src="css/image/ENGL3338.svg" width="50 " height="50">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="css/image/IREL2041.svg"width="50 " height="50">
+                        </td>
+                        <td>
+                            <p><br>Irlande / Pays de Galles </p>
+                        </td>
+                        <td>
+                            <img src="css/image/WALE7552.svg" width="50 " height="50">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="css/image/FRAN3158.svg"width="50 " height="50">
+                        </td>
+                        <td>
+                            <p><br>France/ Italie</p>
+                        </td>
+                        <td>
+                            <img src="css/image/ITAL6499.svg" width="50 " height="50">
+                        </td>
+
+                    </tr>
+
+
+                </table>
+
+            </div>
+            </div>
+            </div>
+
+
+
+
+  <footer class="footer has-text-centered">
+      <div class="container">
+          <div class="columns">
+              <div class="column is-8-desktop is-offset-2-desktop">
+                  <p>
+                      <strong class="has-text-weight-semibold">
+                          <a href="https://www.npmjs.com/package/bulma-start">Thiziri kechidi</a>
+                      </strong>
+                  </p>
+                  <p style="margin-top: 1rem;">
+                      <a href="https://pigne.org/teaching/infoweb/lab/TP_Framework_CSS">
+                          <img src="css/image/kec.jpg" alt="Made with kechidi" width="128" height="24">
+                      </a>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <script type="text/javascript" src="lib/main.js"></script>
+
+
+     </body>
+ </html>
+
+
+
+
+
+

@@ -6798,19 +6798,14 @@ label.panel-block {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
-#Compte
-{
-background-color: #0a0a0a;
-position: relative;
+#Compte {
+  background-color: #0f81cc;
+
+
+
 
 }
-.image is-128x128{
-  position: static;
-  right: 3px;
-}
-.has-ratio{
-  position: center;
-}
+
 
 
 

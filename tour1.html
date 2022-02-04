@@ -2,99 +2,241 @@
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tournoi de six nations 2022 féminin </title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
-<section class="hero is-medium is-primary">
+<section class="hero is-primary is-bold">
     <div class="hero-body">
-        <div class="container">
-            <div class="columns">
+        <div class="container ">
+            <div class="columns ">
+                <div class="column">
+                    <img class="image" src="css/image/Womens-SixNations-RGB_AW-2.svg " width="500" height="500"/>
+                </div>
                 <div class="column is-8-desktop is-offset-2-desktop">
-                    <img src="css/image/logo.png" alt="Made with Bulma" width="128" height="24">
-                    <h1 class="title is-2 is-spaced">
-                        equipes
-                    </h1>
-                    <h2 class="subtitle is-4">
-                        Le Tournoi des six nations aura lieu du 26 mars au 30 avril 2022<strong>compte a robot</strong> project.
-
-                    </h2>
+                    <h2 class="title is-3 is-spaced"> Tournoi des Six Nations 2022 féminin</h2>
+                    <p class="subtitle is-5 ">Tournoi des Six Nations féminin aura lieu du 26 mars au 30 avril 2022 </p>
                 </div>
             </div>
         </div>
     </div>
+    <label id="Compte"></label>
+    <script type="text/javascript">
+
+        var Affiche=document.getElementById("Compte");
+        function Rebour() {
+            var date1 = new Date();
+            var date2 = new Date ("Mar 22, 2022 00:00:00");
+            var sec = (date2 - date1) / 1000;
+            var n = 24 * 3600;
+            if (sec > 0) {
+                j = Math.floor (sec / n);
+                h = Math.floor ((sec - (j * n)) / 3600);
+                mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
+                sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
+                Affiche.innerHTML = +j +" j "+ h +" h "+ mn +" min "+ sec + " s";
+                window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
+            }
+            tRebour=setTimeout ("Rebour();", 1000);
+        }
+        Rebour();
+    </script>
+
+
+</section>
+<section class="section">
+    <div class="columns">
+        <section class="section is-hidden-mobile">
+            <div class="column">
+
+                <aside class="menu">
+                    <p class="menu-label">
+                        TOURS
+                    </p>
+                    <ul class="menu-list">
+                        <li><a href="tour1.html">Tour 1</a></li>
+                        <li><a>Tour 2</a></li>
+                        <li><a>Tour 3</a></li>
+                        <li><a>Tour 4</a></li>
+                    </ul>
+                    <p class="menu-label">
+                        STADES
+                    </p>
+                    <ul class="menu-list">
+                        <li><a>Twickenham</a></li>
+                        <li><a>Murrayfield</a></li>
+                        <li><a>Stade de France</a></li>
+                        <li><a>Principality Stadium</a></li>
+                        <li><a>Aviva Stadium</a></li>
+                        <li><a>Stade olympique</a></li>
+
+
+                    </ul>
+                    <p class="menu-label ">
+                        ÉQUIPES
+                    </p>
+                    <ul class="menu-list">
+                        <li><a>Angeleterre</a></li>
+                        <li><a>Ecosse</a></li>
+                        <li><a href="france.html">France</a></li>
+                        <li><a>Irlade</a></li>
+                        <li><a>Italie</a></li>
+                        <li><a>Pays de Galles</a></li>
+
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+
+
+
+    <section class="section">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="index.html">Tournoi des six nations </a></li>
+                <li><a href="tournoi.html">Tours</a></li>
+
+
+                <li class="is-active"><a href="tour1.html" aria-current="page">Tour1</a></li>
+            </ul>
+        </nav>
+
+        <div class="column is-8-desktop is-offset-2-desktop">
+            <div class="content">
+
+
+
+                <h1 class="title is-1">Tour 1</h1>
+                <h2 class="title is-2">Calendrier des matchs</h2>
+
+
+                <div class="tabs is-centered is-boxed">
+                    <ul>
+                        <li class="is-active">
+                            <a>
+
+                                <span>Tour 1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+
+                                <span>Tour 2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+
+                                <span>Tour 3</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+
+                                <span>Tour 4</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="columns">
+
+                    <div class="column is-full">
+                        <table class="table is-fullwidth ">
+
+
+
+                            <tr>
+                                <td>
+                                    <figure>
+                                        <img src= "css/image/ecrosse.png" alt="Ecosse">
+                                        <figcaption style="margin-left: 13px">Ecrosse</figcaption>
+                                    </figure>
+                                </td>
+                                <td class="has-text-centered">
+                                    <p  style="font-weight: bold">26 mars</p>
+                                    <p style="font-weight: bold">13:00</p>
+                                    <br>
+                                    <p class="is-size-7" >The DAM Health Stadium</p>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src= "css/image/ENGL3338.svg" alt="angeleterre">
+                                        <figcaption style="margin-left: 13px">Angleterre</figcaption>
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <figure>
+                                        <img src= "css/image/IREL2041.svg" alt="irlande">
+                                        <figcaption style="margin-left: 13px">Irlande</figcaption>
+                                    </figure>
+                                </td>
+                                <td    class="has-text-centered">
+                                    <p  style="font-weight: bold">26 mars</p>
+                                    <p style="font-weight: bold">17:45</p>
+                                    <br>
+                                    <p class="is-size-7" >RDS Arena</p>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src= "css/image/WALE7552.svg" alt="paysDeGalles">
+                                        <figcaption style="margin-left: 13px">paye de galles</figcaption>
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <figure>
+                                        <img src= "css/image/WALE7552.svg" alt="france">
+                                        <figcaption style="margin-left: 13px">France</figcaption>
+                                    </figure>
+                                </td>
+                                <td class="has-text-centered">
+                                    <p  style="font-weight: bold">27 mars</p>
+                                    <p style="font-weight: bold">16:00</p>
+                                    <br>
+                                    <p class="is-size-7" >Stade des Alpes</p>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src= "css/image/ITAL6499.svg" alt="italie">
+                                        <figcaption style="margin-left: 13px">Italie</figcaption>
+                                    </figure>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
 </section>
 
 
 
-<div class="buttons">
-    <div class="button">
-        <button class="button is-link" onclick="window.location.href = '';" >france</button>
-
-        <table>
-            <thead>
-            <tr>
-                <th>eQUI</th>
-                <th>Tour2</th>
-                <th>Tour3</th>
-                <th>Tour4</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Three</td>
-                <td>Four</td>
-            </tr>
-
-            </tbody>
-        </table>
-
-
-
-    </div>
-    <div class="column">
-
-        <button class="button is-link">Angeletere</button>
-    </div>
-    <div class="column">
-        <button class="button is-link">allemagne</button>
-    </div>
-    <div class="column">
-        Fourth column
-    </div>
 
 
 
 
 
-
-
-
-    <footer class="footer has-text-centered">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-8-desktop is-offset-2-desktop">
-                    <p>
-                        <strong class="has-text-weight-semibold">
-                            <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.4</a>
-                        </strong>
-                    </p>
-                    <p>
-                        <small>
-                            Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
-                        </small>
-                    </p>
-                    <p style="margin-top: 1rem;">
-                        <a href="http://bulma.io">
-                            <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script type="text/javascript" src="lib/main.js"></script>
 </body>
 </html>

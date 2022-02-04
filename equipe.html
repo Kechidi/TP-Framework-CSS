@@ -1,31 +1,54 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tournoi de six nations 2022 féminin </title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
-<section class="hero is-medium is-primary">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-8-desktop is-offset-2-desktop">
-                    <img src="css/image/logo.png" alt="Made with Bulma" width="128" height="24">
-                    <h1 class="title is-2 is-spaced">
-                        <p class="title is-1 is-spaced">Equipes</p>
-                    </h1>
-                    <h2 class="subtitle is-4">
-                        Le Tournoi des six nations aura lieu du 26 mars au 30 avril 2022<strong>compte a robot</strong> project.
 
-                    </h2>
+<section class="hero is-primary is-bold">
+    <div class="hero-body">
+        <div class="container ">
+            <div class="columns ">
+                <div class="column">
+
+                    <img class="image" src="css/image/Womens-SixNations-RGB_AW-2.svg " width="500" height="500"/>
+                </div>
+                <div class="column is-8-desktop is-offset-2-desktop">
+                    <h2 class="title is-3 is-spaced"> Tournoi des Six Nations 2022 féminin</h2>
+                    <p class="subtitle is-5 ">Tournoi des Six Nations féminin aura lieu du 26 mars au 30 avril 2022 </p>
                 </div>
             </div>
         </div>
     </div>
+    <label id="Compte"></label>
+    <script type="text/javascript">
+
+        var Affiche=document.getElementById("Compte");
+        function Rebour() {
+            var date1 = new Date();
+            var date2 = new Date ("Mar 26, 2022 00:00:00");
+            var sec = (date2 - date1) / 1000;
+            var n = 24 * 3600;
+            if (sec > 0) {
+                j = Math.floor (sec / n);
+                h = Math.floor ((sec - (j * n)) / 3600);
+                mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
+                sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
+                Affiche.innerHTML = +j +" j "+ h +" h "+ mn +" min "+ sec + " s";
+                window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
+            }
+            tRebour=setTimeout ("Rebour();", 1000);
+        }
+        Rebour();
+    </script>
+
 </section>
+
 
 
 <div class="columns">
@@ -47,7 +70,7 @@
                 </p>
                 <ul class="menu-list">
                     <li><a>Twickenham</a></li>
-                    <li><a></a></li>
+                    <li><a>Murrayfield</a></li>
                     <li><a>Stade de France</a></li>
                     <li><a>Principality Stadium</a></li>
                     <li><a>Aviva Stadium</a></li>
@@ -73,71 +96,75 @@
 
 
 
+    <section class="section">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="http://localhost/perso/TP-Framework-CSS/index.html">Tournoi des six nations 2022 féminin </a></li>
+                <li class="is-active"><a href="equipe.html" aria-current="page">Équipes</a></li>
+            </ul>
+        </nav>
+        <div class="columns">
 
-<div class="buttons">
-    <div class="button">
-        <button class="button is-link" onclick="window.location.href = '';" >france</button>
+            <div class="column is-full">
+                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                    <tr>
 
-        <table>
-            <thead>
-            <tr>
-                <th>One</th>
-                <th>Two</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Three</td>
-                <td>Four</td>
-            </tr>
+                     <button class="button is-large is-fullwidth" onclick="window.location.href = 'france.html';">
+                            <img  class="icon"  src="css/image/FRAN3158.svg">
+                            <span>FRANCE</span>
+                     </button>
 
-            </tbody>
-        </table>
+                    </tr>
 
+                </table>
+                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                    <tr>
 
+                        <button class="button is-large is-fullwidth" onclick="window.location.href = 'france.html';">
+                            <img  class="icon"  src="css/image/ITAL6499.svg">
+                            <span>ITALIE</span>
+                        </button>
 
-    </div>
-    <div class="column">
+                    </tr>
 
-        <button class="button is-link"></button>
-    </div>
-    <div class="column">
-        <button class="button is-link"></button>
-    </div>
-    <div class="column">
-        Fourth column
-    </div>
-
-
-
-
-
-
-
-
-    <footer class="footer has-text-centered">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-8-desktop is-offset-2-desktop">
-                    <p>
-                        <strong class="has-text-weight-semibold">
-                            <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.4</a>
-                        </strong>
-                    </p>
-                    <p>
-                        <small>
-                            Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
-                        </small>
-                    </p>
-                    <p style="margin-top: 1rem;">
-                        <a href="http://bulma.io">
-                            <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-                        </a>
-                    </p>
-                </div>
+                </table>
             </div>
-        </div>
-    </footer>
-    <script type="text/javascript" src="lib/main.js"></script>
+            <div class="column is-full">
+                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+
+                        <button class="button is-large is-fullwidth" onclick="window.location.href = 'angel.html';">
+                            <img  class="icon"  src="css/image/ENGL3338.svg">
+                            <span>Angleterre</span>
+                        </button>
+
+
+
+                </table>
+
+                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                    <tr>
+
+                        <button class="button is-large is-fullwidth" onclick="window.location.href = 'france.html';">
+                            <img  class="icon"  src="css/image/IREL2041.svg">
+                            <span>IRLANDE</span>
+                        </button>
+
+                    </tr>
+
+                </table>
+            </div>
+
+
+    </section>
+
+
+
+
 </body>
 </html>
+
+
+
+
+
+

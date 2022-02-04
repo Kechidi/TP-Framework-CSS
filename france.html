@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tournoi de six nations 2022 féminin </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+
+<section class="hero is-primary is-bold">
+    <div class="hero-body">
+        <div class="container ">
+            <div class="columns ">
+                <div class="column">
+
+                    <img class="image" src="css/image/Womens-SixNations-RGB_AW-2.svg " width="500" height="500"/>
+                </div>
+                <div class="column is-8-desktop is-offset-2-desktop">
+                    <h2 class="title is-3 is-spaced"> Tournoi des Six Nations 2022 féminin</h2>
+                    <p class="subtitle is-5 ">Tournoi des Six Nations féminin aura lieu du 26 mars au 30 avril 2022 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <label id="Compte"></label>
+    <script type="text/javascript">
+
+        var Affiche=document.getElementById("Compte");
+        function Rebour() {
+            var date1 = new Date();
+            var date2 = new Date ("Mar 26, 2022 00:00:00");
+            var sec = (date2 - date1) / 1000;
+            var n = 24 * 3600;
+            if (sec > 0) {
+                j = Math.floor (sec / n);
+                h = Math.floor ((sec - (j * n)) / 3600);
+                mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
+                sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
+                Affiche.innerHTML = +j +" j "+ h +" h "+ mn +" min "+ sec + " s";
+                window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
+            }
+            tRebour=setTimeout ("Rebour();", 1000);
+        }
+        Rebour();
+    </script>
+
+</section>
+
+
+
+<div class="columns">
+    <section class="section is-hidden-mobile">
+        <div class="column">
+
+            <aside class="menu">
+                <p class="menu-label">
+                    TOURS
+                </p>
+                <ul class="menu-list">
+                    <li><a href="tour1.html">Tour 1</a></li>
+                    <li><a>Tour 2</a></li>
+                    <li><a>Tour 3</a></li>
+                    <li><a>Tour 4</a></li>
+                </ul>
+                <p class="menu-label">
+                    STADES
+                </p>
+                <ul class="menu-list">
+                    <li><a>Twickenham</a></li>
+                    <li><a>Murrayfield</a></li>
+                    <li><a>Stade de France</a></li>
+                    <li><a>Principality Stadium</a></li>
+                    <li><a>Aviva Stadium</a></li>
+                    <li><a>Stade olympique</a></li>
+
+
+                </ul>
+                <p class="menu-label ">
+                    ÉQUIPES
+                </p>
+                <ul class="menu-list">
+                    <li><a>Angeleterre</a></li>
+                    <li><a>Ecosse</a></li>
+                    <li><a href="france.html">France</a></li>
+                    <li><a>Irlade</a></li>
+                    <li><a>Italie</a></li>
+                    <li><a>Pays de Galles</a></li>
+
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="column">
+            <div class="columns">
+                <div class="column">
+                    <nav class="breadcrumb" aria-label="breadcrumbs">
+                        <ul>
+                            <li><a href="index.html">Tournoi des six nations féminin 2022 </a></li>
+                            <li><a href="equipe.html">Équipes </a></li>
+                            <li class="is-active"><a href="france.html" aria-current="page">France</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+<div class="columns">
+
+
+        <div class="column">
+
+            <table class="table  is-fullwidth ">
+
+
+                   <tr>
+                    <th><img src="css/image/drappp.png" width="200" height="200">France</th>
+                       <th>  <img src="css/image/FRAN3158.svg" width="200" height="200"></th>
+                    <th><img src="css/image/tenue.png"  >Tenue </th>
+
+                   </tr>
+
+                  <tr class="column">
+                      <table class="">
+                          <tr>
+                              <td><strong>Entrée au Board:</strong>1989<br>
+                                 <strong>Sélectionneur:</strong> Annick Hayraud (manager)<br>
+                                  <strong>Capitaine:</strong>  	Gaëlle Hermet<br>
+                                  <strong>Record de sélections:</strong> Laëtitia Salles (92)<br>
+
+
+
+
+
+
+
+
+                              </td>
+                          </tr>
+
+
+                      </table>
+
+
+                  </tr>
+
+
+
+
+
+            </table>
+
+
+
+    </div>
+
+</div>
+
+
+  <strong>Équipe actuelle:</strong>
+            <div class="columns">
+                <div class="column">
+
+                    <table class="table is-striped is-fluid is-fullwidth ">
+                        <tr>
+
+
+                           <th><strong>Nom</strong></th>
+                            <th>Prénom</th>
+                            <th>Age</th>
+                            <th>Poste</th>
+                            <th>Photo</th>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                              <p>Arricastre</p>
+                            </td>
+                            <td>
+                                <p>Lise</p>
+                            </td>
+                            <td>
+                                <p>17 juin 1991 (30 ans)</p>
+                            </td>
+
+
+                            <td>
+                                <p>Pilier</p>
+
+                            </td>
+
+                            <td>
+                                <img src="css/image/arricastre-1.jpg"width="50 " height="50">
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Bernadou</p>
+                            </td>
+                            <td>
+                                <p>Rose </p>
+                            </td>
+                            <td>
+                                <p>23 mars 2000 (21 ans)</p>
+                            </td>
+                            <td>
+                                <p>Pilier</p>
+
+                            </td>
+
+                            <td>
+                                <img src="css/image/bernadou-rose1-scaled-e1635598387906.jpg"width="50 " height="50">
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Joyeux</p>
+                            </td>
+                            <td>
+                                <p>Clara  </p>
+                            </td>
+                            <td>
+                                <p>10 janvier 1998 (24 ans)</p>
+
+                            </td>
+                            <td>
+                                <p>Pilier</p>
+                            </td>
+
+                            <td>
+                                <img src="css/image/joyeux-clara1-scaled-e1635599369505.jpg"width="50 " height="50">
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <p> Sochat</p>
+                            </td>
+                            <td>
+                                <p>Agathe  </p>
+                            </td>
+                            <td>
+                                <p>21 mai 1995 (26 ans)</p>
+
+                            </td>
+                            <td>
+                                <p>Talonneur</p>
+                            </td>
+
+                            <td>
+                                <img src="css/image/sochat-2-600x600.jpg"width="50 " height="50">
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Thomas</p>
+                            </td>
+                            <td>
+                                <p>Caroline   </p>
+                            </td>
+                            <td>
+                                <p>26 septembre 1991 (30 ans)</p>
+
+                            </td>
+                            <td>
+                                <p>Talonneur</p>
+                            </td>
+
+                            <td>
+                                <img src="css/image/thomas-caroline1-scaled-e1635599670250.jpg"width="50 " height="50">
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p>Corson </p>
+                            </td>
+                            <td>
+                                <p>Lénaïg  </p>
+                            </td>
+                            <td>
+                                <p>15 mars 1989 (32 ans)</p>
+
+                            </td>
+                            <td>
+                                <p>Deuxième ligne</p>
+                            </td>
+
+                            <td>
+                                <img src="css/image/licensed-image.jpeg"width="50 " height="50">
+                            </td>
+
+                        </tr>
+
+
+
+                        <tr>
+                            <td>
+                                <p> Fall</p>
+                            </td>
+                            <td>
+                                <p>Madoussou  </p>
+                            </td>
+                            <td>
+                                <p>17 mars 1998 (23 ans)</p>
+
+                            </td>
+                            <td>
+                                <p>Deuxième ligne</p>
+
+                            </td>
+
+                            <td>
+                                <img src="css/image/fall-madoussou1-scaled-e1635598738564.jpg"width="50 " height="50">
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <p> Ferer</p>
+                            </td>
+                            <td>
+                                <p>Céline   </p>
+                            </td>
+                            <td>
+                                <p>21 juin 1991 (30 ans)</p>
+
+                            </td>
+                            <td>
+                                <p>Deuxième ligne</p>
+                            </td>
+
+                            <td>
+                                <img src="css/image/ferer-1-scaled-e1635599148170.jpg"width="50 " height="50">
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p>Forlani </p>
+                            </td>
+                            <td>
+                                <p>Audrey  </p>
+                            </td>
+                            <td>
+
+                                <p>19 novembre 1991 (30 ans)</p>
+                            </td>
+                            <td>
+                                <p>Deuxième ligne</p>
+
+                            </td>
+
+                            <td>
+                                <img src="css/image/forlani-audrey1-scaled-e1635599187112.jpg"width="50 " height="50">
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <p>N'Diaye </p>
+                            </td>
+                            <td>
+                                <p>Safi  </p>
+                            </td>
+                            <td>
+                                <p>16 juin 1988 (33 ans)</p>
+
+                            </td>
+                            <td>
+                                <p>Deuxième ligne</p>
+
+                            </td>
+
+                            <td>
+                                <img src="css/image/vn3CB7QR_400x400.jpg"width="50 " height="50">
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Annery </p>
+                            </td>
+                            <td>
+                                <p>Julie </p>
+                            </td>
+                            <td>
+                                <p>12 juin 1995 (26 ans)</p>
+
+                            </td>
+                            <td>
+                                <p>Troisième ligne aile et centre</p>
+
+                            </td>
+
+                            <td>
+                                <img src="css/image/annery-2-scaled-e1635598040292.jpg"width="50 " height="50">
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p>Diallo </p>
+                            </td>
+                            <td>
+                                <p>Coumba  </p>
+                            </td>
+                            <td>
+                                <p>27 septembre 1990 (31 ans)</p>
+                            </td>
+                            <td>
+                                <p>Troisième ligne aile et centre</p>
+                            </td>
+
+                            <td>
+                                <img src="css/image/diallo-1-600x600.jpg"width="50 " height="50">
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <p>Hermet </p>
+                            </td>
+                            <td>
+                                <p>Gaëlle    </p>
+                            </td>
+                            <td>
+                                <p>12 juin 1996 (25 ans)</p>
+                            </td>
+                            <td>
+                                <p>Troisième ligne aile et centre</p>
+                            </td>
+
+                            <td>
+                                <img src="css/image/QQOf3VJh_400x400.jpg"width="50 " height="50">
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p>Gros  </p>
+                            </td>
+                            <td>
+                                <p>Émeline   </p>
+                            </td>
+                            <td>
+                                <p>19 août 1995 (26 ans)</p>
+                            </td>
+                            <td>
+                                <p>Troisième ligne aile et centre</p>
+                            </td>
+
+                            <td>
+                                <img src="css/image/Emeline-Gros.jpg"width="50 " height="50">
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p> Ménager </p>
+                            </td>
+                            <td>
+                                <p>Romane   </p>
+                            </td>
+                            <td>
+                                <p>26 juillet 1996 (25 ans)</p>
+                            </td>
+                            <td>
+                                <p>Troisième ligne aile et centre</p>
+                            </td>
+
+                            <td>
+                                <img src="css/image/menager-scaled-e1635599486537.jpg"width="50 " height="50">
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <p> Bourdon   </p>
+                            </td>
+                            <td>
+                                <p>Pauline </p>
+                            </td>
+                            <td>
+                                <p>4 novembre 1995 (26 ans)</p>
+                            </td>
+                            <td>
+                                <p>Demi de mêlée</p>
+                            </td>
+
+                            <td>
+                                <img src="css/image/bourdon-scaled-e1635598464652.jpg"width="50 " height="50">
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <p> Sansus   </p>
+                            </td>
+                            <td>
+                                <p>Laure </p>
+                            </td>
+                            <td>
+                                <p>21 juin 1994 (27 ans)</p>
+                            </td>
+                            <td>
+                                <p>Demi de mêlée</p>
+                            </td>
+
+                            <td>
+                                <img src="css/image/sansus-1-scaled-e1635599635396.jpg"width="50 " height="50">
+                            </td>
+
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
